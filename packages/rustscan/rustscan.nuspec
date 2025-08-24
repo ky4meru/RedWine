@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rustscan</id>
+    <version>2.4.1</version>
+    <title>LaZagne</title>
+    <authors>@bee-san</authors>
+    <projectUrl>https://github.com/bee-san/RustScan</projectUrl>
+    <description>The Modern Port Scanner</description>
+  </metadata>
+</package>

@@ -29,6 +29,7 @@ $ChocolateyPackagesToInstall = @(
 
 $RedWinePackagesToInstall = @(
     "lazagne"
+    "rustscan"
 )
 
 $AppxProvisionedPackagesToRemove = @(
@@ -49,7 +50,7 @@ $RedWineMainFolderPath = $(Join-Path $Env:TEMP "RedWine-main")
 $RedWineFolderPath = $(Join-Path $Env:TEMP "RedWine")
 $RedWinePackagesPath = $(Join-Path $RedWineFolderPath "packages")
 
-# Install Chocolatey.
+# Install Chocolatey (see https://chocolatey.org/install).
 Set-ExecutionPolicy Bypass -Scope Process -Force;
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -72,7 +73,11 @@ foreach ($Package in $RedWinePackagesToInstall) {
     choco install $Package --source=$PackagePath --yes
 }
 
-# Uninstall built-in apps.
+# Remove RedWine.
+Remove-Item $RedWineZipPath -Force
+Remove-Item $RedWineFolderPath -Force -Recurse
+
+# Uninstall Windows built-in apps.
 foreach ($Package in $AppxProvisionedPackagesToRemove) {
     Get-AppxProvisionedPackage -Online | Where-Object { $_.DisplayName -match $Package } | Remove-AppxProvisionedPackage -Online -AllUsers
 }
