@@ -59,8 +59,8 @@ Add-MpPreference -ExclusionPath $Env:ChocolateyInstall
 
 # Fetch RedWine.
 Invoke-WebRequest -Uri 'https://github.com/ky4meru/RedWine/archive/refs/heads/main.zip' -OutFile $RedWineZipPath
-Expand-Archive -Path $RedWineZipPath -DestinationPath $Env:TEMP
-Move-Item $RedWineMainFolderPath $RedWineFolderPath
+Expand-Archive -Path $RedWineZipPath -DestinationPath $Env:TEMP -Force
+Move-Item $RedWineMainFolderPath $RedWineFolderPath -Force
 
 # Install Chocolatey packages.
 choco install $ChocolateyPackagesToInstall --yes
