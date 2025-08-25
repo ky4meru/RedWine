@@ -6,7 +6,7 @@
     <title>Rubeus</title>
     <authors>@GhostPack</authors>
     <projectUrl>https://github.com/GhostPack/Rubeus</projectUrl>
-    <description>https://github.com/GhostPack/Rubeus</description>
+    <description>Trying to tame the three-headed dogs</description>
     <dependencies>
       <dependency id="dotnet-frameworks" />
     </dependencies>

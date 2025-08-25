@@ -27,6 +27,7 @@ $ChocolateyPackagesToInstall = @(
 )
 
 $RedWinePackagesToInstall = @(
+    "domainpasswordspray"
     "dotnet-frameworks"
     "lazagne"
     "rubeus"
