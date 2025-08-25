@@ -20,7 +20,6 @@ $ChocolateyPackagesToInstall = @(
     "qflipper"
     "sysinternals"
     "systeminformer"
-    "visualstudio2022buildtools"
     "visualstudio2022community"
     "vscode"
     "wireguard"
@@ -28,7 +27,9 @@ $ChocolateyPackagesToInstall = @(
 )
 
 $RedWinePackagesToInstall = @(
+    "dotnet-frameworks"
     "lazagne"
+    "rubeus"
     "rustscan"
 )
 

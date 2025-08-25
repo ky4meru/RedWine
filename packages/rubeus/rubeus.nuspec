@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rubeus</id>
+    <version>1.6.4</version>
+    <title>Rubeus</title>
+    <authors>@GhostPack</authors>
+    <projectUrl>https://github.com/GhostPack/Rubeus</projectUrl>
+    <description>https://github.com/GhostPack/Rubeus</description>
+    <dependencies>
+      <dependency id="dotnet-frameworks" />
+    </dependencies>
+  </metadata>
+</package>
