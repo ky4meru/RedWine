@@ -30,6 +30,8 @@ $RedWinePackagesToInstall = @(
     "domainpasswordspray"
     "dotnet-frameworks"
     "lazagne"
+    "ldapsearch-ad"
+    "pipx"
     "rubeus"
     "rustscan"
 )
