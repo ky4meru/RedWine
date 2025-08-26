@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>bloodyad</id>
+    <version>2.1.21</version>
+    <title>BloodyAD</title>
+    <authors>@CravateRouge</authors>
+    <projectUrl>https://github.com/CravateRouge/bloodyAD</projectUrl>
+    <description>BloodyAD is an Active Directory Privilege Escalation Framework</description>
+  </metadata>
+</package>

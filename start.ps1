@@ -32,6 +32,7 @@ $RedWinePackagesToInstall = @(
     "pipx"    
 
     # Then, install packages.
+    "bloodyad"
     "domainpasswordspray"
     "godpotato"
     "juicypotato"
