@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sharpexclusionfinder</id>
+    <version>1.0</version>
+    <title>SharpExclusionFinder</title>
+    <authors>@Friends-Security</authors>
+    <projectUrl>https://github.com/Friends-Security/SharpExclusionFinder</projectUrl>
+    <description>Tool designed to find folder exclusions using Windows Defender using command line utility MpCmdRun.exe as a low privileged user, without relying on event logs</description>
+  </metadata>
+</package>
