@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>printspoofer</id>
+    <version>1.0</version>
+    <title>PrintSpoofer</title>
+    <authors>@itm4n</authors>
+    <projectUrl>https://github.com/itm4n/PrintSpoofer</projectUrl>
+    <description>Abusing impersonation privileges through the "Printer Bug"</description>
+  </metadata>
+</package>
