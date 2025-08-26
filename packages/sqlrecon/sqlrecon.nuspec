@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sqlrecon</id>
+    <version>3.10</version>
+    <title>SQLRecon</title>
+    <authors>@skahwah</authors>
+    <projectUrl>https://github.com/skahwah/SQLRecon</projectUrl>
+    <description>A C# MS SQL toolkit designed for offensive reconnaissance and post-exploitation</description>
+  </metadata>
+</package>
