@@ -27,11 +27,15 @@ $ChocolateyPackagesToInstall = @(
 )
 
 $RedWinePackagesToInstall = @(
-    "domainpasswordspray"
+    # Install dependencies first.
     "dotnet-frameworks"
+    "pipx"    
+
+    # Then, install packages.
+    "domainpasswordspray"
+    "kerbrute"
     "lazagne"
     "ldapsearch-ad"
-    "pipx"
     "rubeus"
     "rustscan"
 )
