@@ -33,6 +33,7 @@ $RedWinePackagesToInstall = @(
 
     # Then, install packages.
     "domainpasswordspray"
+    "godpotato"
     "kerbrute"
     "lazagne"
     "ldapsearch-ad"
