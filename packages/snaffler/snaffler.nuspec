@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>snaffler</id>
+    <version>1.0.212</version>
+    <title>Snaffler</title>
+    <authors>@SnaffCon</authors>
+    <projectUrl>https://github.com/SnaffCon/Snaffler</projectUrl>
+    <description>A tool for pentesters to help find delicious candy</description>
+  </metadata>
+</package>

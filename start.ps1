@@ -42,6 +42,7 @@ $RedWinePackagesToInstall = @(
     "printspoofer"
     "rubeus"
     "rustscan"
+    "snaffler"
     "spoolfool"
     "sqlrecon"
 )
