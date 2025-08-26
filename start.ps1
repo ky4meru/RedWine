@@ -40,6 +40,7 @@ $RedWinePackagesToInstall = @(
     "ldapsearch-ad"
     "rubeus"
     "rustscan"
+    "spoolfool"
     "sqlrecon"
 )
 
