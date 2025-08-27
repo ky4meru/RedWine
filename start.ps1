@@ -41,6 +41,7 @@ $RedWinePackagesToInstall = @(
     "juicypotato"
     "kerbrute"
     "krbrelay"
+    "krbrelayup"
     "lazagne"
     "ldapsearch-ad"
     "mangle"
