@@ -47,6 +47,7 @@ $RedWinePackagesToInstall = @(
     "rubeus"
     "rustscan"
     "seatbelt"
+    "sharpdpapi"
     "sharpexclusionfinder"
     "sharpup"
     "snaffler"
