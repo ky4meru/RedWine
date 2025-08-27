@@ -46,6 +46,7 @@ $RedWinePackagesToInstall = @(
     "ldapsearch-ad"
     "mangle"
     "msolspray"
+    "petitpotam"
     "printspoofer"
     "rubeus"
     "rustscan"
