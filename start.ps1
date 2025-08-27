@@ -54,6 +54,7 @@ $RedWinePackagesToInstall = @(
     "snaffler"
     "spoolfool"
     "sqlrecon"
+    "whisker"
 )
 
 $AppxProvisionedPackagesToRemove = @(
