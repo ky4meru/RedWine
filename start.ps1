@@ -40,6 +40,7 @@ $RedWinePackagesToInstall = @(
     "godpotato"
     "juicypotato"
     "kerbrute"
+    "krbrelay"
     "lazagne"
     "ldapsearch-ad"
     "mangle"
