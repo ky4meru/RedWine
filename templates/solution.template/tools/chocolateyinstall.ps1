@@ -6,7 +6,6 @@ $url = '[[Url]]'
 $tag = '[[Tag]]'
 $msBuild = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe"
 $solutionPath = $(Join-Path $toolsDir "$packageName-$tag\$packageName.sln")
-$exePath = $(Join-Path $toolsDir "$packageName-$tag\$packageName\bin\Release\$packageName.exe")
 
 Get-ChocolateyWebFile -PackageName $packageName -FileFullPath "$toolsDir\$packageName.zip" -Url $url
 Get-ChocolateyUnzip -FileFullPath "$toolsDir\$packageName.zip" -Destination $toolsDir
