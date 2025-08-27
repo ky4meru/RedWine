@@ -6,4 +6,3 @@ $url = '[[Url]]'
 $exePath = $(Join-Path $toolsDir "$packageName.exe")
 
 Get-ChocolateyWebFile -PackageName $packageName -FileFullPath $exePath -Url $url
-Install-BinFile -Name $packageName -Path $exePath
