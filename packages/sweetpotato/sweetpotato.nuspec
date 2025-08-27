@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sweetpotato</id>
+    <version>1.0</version>
+    <title>SweetPotato</title>
+    <authors>@CCob</authors>
+    <projectUrl>https://github.com/CCob/SweetPotato</projectUrl>
+    <description>Local Service to SYSTEM privilege escalation from Windows 7 to Windows 10 / Server 2019</description>
+    <dependencies>
+      <dependency id="dotnet-frameworks" />
+    </dependencies>
+  </metadata>
+</package>

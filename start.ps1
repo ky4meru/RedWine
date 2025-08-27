@@ -61,6 +61,7 @@ $RedWinePackagesToInstall = @(
     "spoolfool"
     "sqlrecon"
     "standin"
+    "sweetpotato"
     "watson"
     "whisker"
 )
