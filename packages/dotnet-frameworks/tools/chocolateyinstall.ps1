@@ -10,3 +10,6 @@ Start-ChocolateyProcessAsAdmin -ExeToRun "C:\Program Files (x86)\Microsoft Visua
 
 # .NET Framework 4.5.
 Start-ChocolateyProcessAsAdmin -ExeToRun "C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" -Statements "modify --productId Microsoft.VisualStudio.Product.Community --channelId VisualStudio.16.Release --add Microsoft.Net.Component.4.5.TargetingPack --quiet --norestart"
+
+# .NET Framework 4.5.2.
+Start-ChocolateyProcessAsAdmin -ExeToRun "C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe" -Statements "modify --productId Microsoft.VisualStudio.Product.Community --channelId VisualStudio.16.Release --add Microsoft.Net.Component.4.5.2.TargetingPack --quiet --norestart"

@@ -51,6 +51,7 @@ $RedWinePackagesToInstall = @(
     "sharpdpapi"
     "sharpexclusionfinder"
     "sharpup"
+    "sharpview"
     "snaffler"
     "spoolfool"
     "sqlrecon"
