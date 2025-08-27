@@ -1,14 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = "Rubeus"
+$packageName = "[[PackageName]]"
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://github.com/GhostPack/Rubeus/archive/refs/tags/1.6.4.zip'
+$url = '[[Url]]'
+$tag = '[[Tag]]'
 $msBuild = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe"
-$solutionPath = $(Join-Path $toolsDir "Rubeus-1.6.4\Rubeus.sln")
-$exePath = $(Join-Path $toolsDir "Rubeus-1.6.4\Rubeus\bin\Release\Rubeus.exe")
+$solutionPath = $(Join-Path $toolsDir "$packageName-$tag\$packageName.sln")
+$exePath = $(Join-Path $toolsDir "$packageName-$tag\$packageName\bin\Release\$packageName.exe")
 
 Get-ChocolateyWebFile -PackageName $packageName -FileFullPath "$toolsDir\$packageName.zip" -Url $url
 Get-ChocolateyUnzip -FileFullPath "$toolsDir\$packageName.zip" -Destination $toolsDir
 
 Start-ChocolateyProcessAsAdmin -ExeToRun $msBuild -Statements "$solutionPath -p:Configuration=Release"
-Install-BinFile -Name $packageName -Path $exePath

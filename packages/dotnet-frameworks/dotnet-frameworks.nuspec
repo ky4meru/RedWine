@@ -8,7 +8,7 @@
     <projectUrl>https://learn.microsoft.com/en-us/dotnet/framework/</projectUrl>
     <description>.NET Frameworks needed to compile offensive tools</description>
     <dependencies>
-      <dependency id="visualstudio2022community" />
+      <dependency id="visualstudio2019community" />
     </dependencies>
   </metadata>
 </package>

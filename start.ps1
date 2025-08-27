@@ -21,7 +21,7 @@ $ChocolateyPackagesToInstall = @(
     "qflipper"
     "sysinternals"
     "systeminformer"
-    "visualstudio2022community"
+    "visualstudio2019community"
     "vscode"
     "wireguard"
     "wireshark"

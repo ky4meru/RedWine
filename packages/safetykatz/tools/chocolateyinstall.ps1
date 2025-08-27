@@ -4,7 +4,7 @@ $packageName = "SafetyKatz"
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url = 'https://github.com/GhostPack/SafetyKatz/archive/refs/heads/master.zip'
 $tag = 'master'
-$msBuild = "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe"
+$msBuild = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe"
 $solutionPath = $(Join-Path $toolsDir "$packageName-$tag\$packageName.sln")
 $exePath = $(Join-Path $toolsDir "$packageName-$tag\$packageName\bin\Release\$packageName.exe")
 
