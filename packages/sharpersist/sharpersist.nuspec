@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sharpersist</id>
+    <version>1.0.1</version>
+    <title>SharPersist</title>
+    <authors>@mandiant</authors>
+    <projectUrl>https://github.com/mandiant/SharPersist</projectUrl>
+    <description>Windows persistence toolkit written in C#</description>
+  </metadata>
+</package>

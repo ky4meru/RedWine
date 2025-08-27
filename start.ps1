@@ -49,6 +49,7 @@ $RedWinePackagesToInstall = @(
     "safetykatz"
     "seatbelt"
     "sharpdpapi"
+    "sharpersist"
     "sharpexclusionfinder"
     "sharpup"
     "sharpview"
