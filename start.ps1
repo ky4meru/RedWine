@@ -51,6 +51,7 @@ $RedWinePackagesToInstall = @(
     "rustscan"
     "safetykatz"
     "seatbelt"
+    "shadowspray"
     "sharpdpapi"
     "sharpersist"
     "sharpexclusionfinder"
