@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>adsearch</id>
+    <version>1.0</version>
+    <title>ADSearch</title>
+    <authors>@tomcarver16</authors>
+    <projectUrl>https://github.com/tomcarver16/ADSearch</projectUrl>
+    <description>A tool to help query AD via the LDAP protocol</description>
+    <dependencies>
+      <dependency id="dotnet-frameworks" />
+    </dependencies>
+  </metadata>
+</package>
