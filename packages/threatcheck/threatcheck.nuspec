@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>threatcheck</id>
+    <version>1.0</version>
+    <title>ThreatCheck</title>
+    <authors>@rasta-mouse</authors>
+    <projectUrl>https://github.com/rasta-mouse/ThreatCheck</projectUrl>
+    <description>Identifies the bytes that Microsoft Defender / AMSI Consumer flags on</description>
+    <dependencies>
+      <dependency id="dotnet-frameworks" />
+    </dependencies>
+  </metadata>
+</package>

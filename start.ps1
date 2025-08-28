@@ -22,6 +22,7 @@ $ChocolateyPackagesToInstall = @(
     "sysinternals"
     "systeminformer"
     "visualstudio2019community"
+    "visualstudio2022community"
     "vscode"
     "wireguard"
     "wireshark"
@@ -63,6 +64,7 @@ $RedWinePackagesToInstall = @(
     "sqlrecon"
     "standin"
     "sweetpotato"
+    "threatcheck"
     "watson"
     "whisker"
 )
