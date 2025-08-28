@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>winpwn</id>
+    <version>1.6</version>
+    <title>WinPwn</title>
+    <authors>@S3cur3Th1sSh1t</authors>
+    <projectUrl>https://github.com/S3cur3Th1sSh1t/WinPwn</projectUrl>
+    <description>Automation for internal Windows Penetrationtest / AD-Security</description>
+  </metadata>
+</package>
