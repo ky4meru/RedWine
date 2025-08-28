@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>privesccheck</id>
+    <version>2025.08.28</version>
+    <title>PrivescCheck</title>
+    <authors>@itm4n</authors>
+    <projectUrl>https://github.com/itm4n/PrivescCheck</projectUrl>
+    <description>Privilege Escalation Enumeration Script for Windows</description>
+  </metadata>
+</package>

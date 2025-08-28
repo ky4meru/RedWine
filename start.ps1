@@ -63,6 +63,7 @@ $RedWinePackagesToInstall = @(
     "powerlurk"
     "powersploit"
     "printspoofer"
+    "privesccheck"
     "rubeus"
     "rustscan"
     "safetykatz"
