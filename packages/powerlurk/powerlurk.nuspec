@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>powerlurk</id>
+    <version>1.0</version>
+    <title>PowerLurk</title>
+    <authors>@Sw4mpf0x</authors>
+    <projectUrl>https://github.com/Sw4mpf0x/PowerLurk</projectUrl>
+    <description>Malicious WMI Events using PowerShell</description>
+  </metadata>
+</package>
