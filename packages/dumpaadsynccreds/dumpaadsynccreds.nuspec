@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dumpaadsynccreds</id>
+    <version>1.0</version>
+    <title>DumpAADSyncCreds</title>
+    <authors>@Hagrid29</authors>
+    <projectUrl>https://github.com/Hagrid29/DumpAADSyncCreds</projectUrl>
+    <description>C# implementation of Get-AADIntSyncCredentials from AADInternals, which extracts Azure AD Connect credentials to AD and Azure AD from AAD connect database</description>
+    <dependencies>
+      <dependency id="dotnet-frameworks" />
+    </dependencies>
+  </metadata>
+</package>
