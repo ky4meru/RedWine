@@ -57,6 +57,7 @@ $RedWinePackagesToInstall = @(
     "sharpdpapi"
     "sharpersist"
     "sharpexclusionfinder"
+    "sharphound"
     "sharpsccm"
     "sharpsystemtriggers"
     "sharpup"
