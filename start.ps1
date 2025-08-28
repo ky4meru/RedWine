@@ -61,6 +61,7 @@ $RedWinePackagesToInstall = @(
     "petitpotam"
     "powercat"
     "powerlurk"
+    "powermad"
     "powersploit"
     "printspoofer"
     "privesccheck"
