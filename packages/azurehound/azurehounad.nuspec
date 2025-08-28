@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>azurehound</id>
+    <version>2.7.1</version>
+    <title>SharpHound</title>
+    <authors>@SpecterOps</authors>
+    <projectUrl>https://github.com/SpecterOps/AzureHound</projectUrl>
+    <description>Azure Data Exporter for BloodHound</description>
+  </metadata>
+</package>
