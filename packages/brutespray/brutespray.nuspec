@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>brutespray</id>
+    <version>2.4.0</version>
+    <title>BruteSpray</title>
+    <authors>@x90skysn3k</authors>
+    <projectUrl>https://github.com/x90skysn3k/brutespray</projectUrl>
+    <description>Bruteforcing from various scanner output - Automatically attempts default creds on found services</description>
+  </metadata>
+</package>
