@@ -52,6 +52,7 @@ $RedWinePackagesToInstall = @(
     "ldapsearch-ad"
     "mailsniper"
     "mangle"
+    "mimikatz"
     "msolspray"
     "naabu"
     "petitpotam"
