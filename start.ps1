@@ -53,6 +53,7 @@ $RedWinePackagesToInstall = @(
     "mailsniper"
     "mangle"
     "msolspray"
+    "naabu"
     "petitpotam"
     "printspoofer"
     "rubeus"

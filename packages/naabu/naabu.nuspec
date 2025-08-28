@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>naabu</id>
+    <version>2.3.5</version>
+    <title>Naabu</title>
+    <authors>@projectdiscovery</authors>
+    <projectUrl>https://github.com/projectdiscovery/naabu</projectUrl>
+    <description>A fast port scanner written in go with a focus on reliability and simplicity</description>
+  </metadata>
+</package>
