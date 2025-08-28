@@ -39,6 +39,7 @@ $RedWinePackagesToInstall = @(
     "adsearch"
     "azurehound"
     "bloodyad"
+    "bruteshark"
     "domainpasswordspray"
     "dumpaadsynccreds"
     "godpotato"
