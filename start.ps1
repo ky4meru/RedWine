@@ -36,6 +36,7 @@ $RedWinePackagesToInstall = @(
 
     # Then, install packages.
     "abuseazureapipermissions"
+    "adrecon"
     "adsearch"
     "azurehound"
     "bloodyad"
