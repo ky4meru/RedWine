@@ -67,6 +67,7 @@ $RedWinePackagesToInstall = @(
     "threatcheck"
     "watson"
     "whisker"
+    "winpeas"
 )
 
 $AppxProvisionedPackagesToRemove = @(
