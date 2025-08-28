@@ -59,6 +59,7 @@ $RedWinePackagesToInstall = @(
     "netexec"
     "petitpotam"
     "powercat"
+    "powersploit"
     "printspoofer"
     "rubeus"
     "rustscan"
