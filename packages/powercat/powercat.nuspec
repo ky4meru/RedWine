@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>powercat</id>
+    <version>1.0</version>
+    <title>PowerCat</title>
+    <authors>@besimorhino</authors>
+    <projectUrl>https://github.com/besimorhino/powercat</projectUrl>
+    <description>Netshell features all in version 2 powershell</description>
+  </metadata>
+</package>
