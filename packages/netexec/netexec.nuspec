@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>netexec</id>
+    <version>1.4.0</version>
+    <title>NetExec</title>
+    <authors>@Pennyw0rth</authors>
+    <projectUrl>https://github.com/Pennyw0rth/NetExec</projectUrl>
+    <description>The Network Execution Tool</description>
+  </metadata>
+</package>

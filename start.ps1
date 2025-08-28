@@ -55,6 +55,7 @@ $RedWinePackagesToInstall = @(
     "mimikatz"
     "msolspray"
     "naabu"
+    "netexec"
     "petitpotam"
     "printspoofer"
     "rubeus"
