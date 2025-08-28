@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>psmapexec</id>
+    <version>0.8.1</version>
+    <title>PsMapExec</title>
+    <authors>@The-Viper-One</authors>
+    <projectUrl>https://github.com/The-Viper-One/PsMapExec</projectUrl>
+    <description>Dominate Active Directory with PowerShell</description>
+  </metadata>
+</package>
