@@ -10,6 +10,7 @@ $ChocolateyPackagesToInstall = @(
     "flameshot"
     "git"
     "googlechrome"
+    "hashcat"
     "keepass"
     "microsoft-windows-terminal"
     "nmap"
