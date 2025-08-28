@@ -49,6 +49,7 @@ $RedWinePackagesToInstall = @(
     "krbrelayup"
     "lazagne"
     "ldapsearch-ad"
+    "mailsniper"
     "mangle"
     "msolspray"
     "petitpotam"

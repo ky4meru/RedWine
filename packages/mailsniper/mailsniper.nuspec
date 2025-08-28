@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mailsniper</id>
+    <version>1.0</version>
+    <title>MailSniper</title>
+    <authors>@dafthack</authors>
+    <projectUrl>https://github.com/dafthack/MailSniper</projectUrl>
+    <description>MailSniper is a penetration testing tool for searching through email in a Microsoft Exchange environment for specific terms (passwords, insider intel, network architecture information, etc.)</description>
+  </metadata>
+</package>
