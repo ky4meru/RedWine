@@ -43,6 +43,7 @@ $RedWinePackagesToInstall = @(
     "bloodyad"
     "bruteshark"
     "brutespray"
+    "chisel"
     "domainpasswordspray"
     "dumpaadsynccreds"
     "edrsilencer"
