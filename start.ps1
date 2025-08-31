@@ -66,6 +66,7 @@ $RedWinePackagesToInstall = @(
     "powerlurk"
     "powermad"
     "powersploit"
+    "powerupsql"
     "printspoofer"
     "privesccheck"
     "psmapexec"
