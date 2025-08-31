@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>bloodhound-cli</id>
+    <version>0.1.8</version>
+    <title>BloodHound CLI</title>
+    <authors>@SpecterOps</authors>
+    <projectUrl>https://github.com/SpecterOps/bloodhound-cli</projectUrl>
+    <description>Six Degrees of Domain Admin</description>
+  </metadata>
+</package>

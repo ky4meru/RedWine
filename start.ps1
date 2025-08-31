@@ -40,6 +40,7 @@ $RedWinePackagesToInstall = @(
     "adrecon"
     "adsearch"
     "azurehound"
+    "bloodhound-cli"
     "bloodyad"
     "bruteshark"
     "brutespray"
