@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>roguepotato</id>
+    <version>1.0</version>
+    <title>RoguePotato</title>
+    <authors>@antonioCoco</authors>
+    <projectUrl>https://github.com/antonioCoco/RoguePotato</projectUrl>
+    <description>Another Windows Local Privilege Escalation from Service Account to System</description>
+  </metadata>
+</package>
