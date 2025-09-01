@@ -97,6 +97,7 @@ $RedWinePackagesToInstall = @(
     "sweetpotato"
     "threatcheck"
     "tokenuniverse"
+    "trufflehog"
     "watson"
     "whisker"
     "winpeas"
