@@ -58,6 +58,7 @@ $RedWinePackagesToInstall = @(
     "lapstoolkit"
     "lazagne"
     "ldapsearch-ad"
+    "ligolo-ng"
     "mailsniper"
     "mangle"
     "microsoft-activation-scripts"
