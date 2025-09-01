@@ -2,6 +2,8 @@
 
 $ChocolateyPackagesToInstall = @(
     "7zip"
+    "awscli"
+    "azure-cli"
     "burp-suite-free-edition"
     "discord"
     "docker-cli"
