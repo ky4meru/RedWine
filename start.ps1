@@ -51,6 +51,7 @@ $RedWinePackagesToInstall = @(
     "dumpaadsynccreds"
     "edrsilencer"
     "gitleaks"
+    "gobuster"
     "godpotato"
     "juicypotato"
     "kerbrute"
