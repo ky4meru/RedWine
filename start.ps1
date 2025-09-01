@@ -29,6 +29,7 @@ $ChocolateyPackagesToInstall = @(
     "visualstudio2019community"
     "visualstudio2022community"
     "vscode"
+    "windows-sdk-10-version-2004-windbg"
     "wireguard"
     "wireshark"
 )
