@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nuclei</id>
+    <version>3.4.10</version>
+    <title>Nuclei</title>
+    <authors>@projectdiscovery</authors>
+    <projectUrl>https://github.com/projectdiscovery/nuclei</projectUrl>
+    <description>Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet</description>
+  </metadata>
+</package>

@@ -65,6 +65,7 @@ $RedWinePackagesToInstall = @(
     "msolspray"
     "naabu"
     "netexec"
+    "nuclei"
     "petitpotam"
     "powercat"
     "powerlurk"
