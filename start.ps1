@@ -20,6 +20,7 @@ $ChocolateyPackagesToInstall = @(
     "nmap"
     "nuget.commandline"
     "obsidian"
+    "openjdk"
     "openvpn-connect"
     "postman"
     "python"
