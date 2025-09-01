@@ -14,6 +14,7 @@ $ChocolateyPackagesToInstall = @(
     "googlechrome"
     "gpg4win"
     "hashcat"
+    "javaruntime"
     "keepass"
     "microsoft-windows-terminal"
     "nmap"
@@ -109,6 +110,7 @@ $RedWinePackagesToInstall = @(
     "winpeas"
     "winpwn"
     "yara"
+    "zaproxy"
 )
 
 $AppxProvisionedPackagesToRemove = @(
