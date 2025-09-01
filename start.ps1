@@ -58,6 +58,7 @@ $RedWinePackagesToInstall = @(
     "ldapsearch-ad"
     "mailsniper"
     "mangle"
+    "microsoft-activation-scripts"
     "mimikatz"
     "msolspray"
     "naabu"
@@ -149,9 +150,6 @@ Remove-Item $RedWineFolderPath -Force -Recurse
 foreach ($Package in $AppxProvisionedPackagesToRemove) {
     Get-AppxProvisionedPackage -Online | Where-Object { $_.DisplayName -match $Package } | Remove-AppxProvisionedPackage -Online -AllUsers
 }
-
-# Permanently activate Windows with MAS.
-& ([ScriptBlock]::Create((New-Object Net.WebClient).DownloadString('https://get.activated.win'))) /HWID
 
 # Update the system.
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
