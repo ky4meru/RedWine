@@ -50,6 +50,7 @@ $RedWinePackagesToInstall = @(
     "domainpasswordspray"
     "dumpaadsynccreds"
     "edrsilencer"
+    "gitleaks"
     "godpotato"
     "juicypotato"
     "kerbrute"
