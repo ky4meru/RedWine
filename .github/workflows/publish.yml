@@ -1,0 +1,31 @@
+name: Publish packages
+
+on:
+  push:
+    branches:
+    - 'main'
+
+jobs:
+  publish:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+
+    - name: Install Chocolatey
+      run: |
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+    - name: Build Chocolatey package
+      run: |
+        choco pack
+
+    - name: Push NuGet package to GitHub Packages
+      run: |
+        $nupkg = Get-ChildItem *.nupkg | Select-Object -First 1
+        nuget push $nupkg.FullName -Source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" -ApiKey ${{ secrets.GITHUB_TOKEN }}
