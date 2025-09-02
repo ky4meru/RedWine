@@ -25,7 +25,8 @@ jobs:
 
     - name: Push NuGet packages to GitHub
       run: |
+        dotnet nuget add source --username ${{ github.repository_owner }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name "github" "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
         $packages = Get-ChildItem *.nupkg -Recurse
         foreach ($package in $packages) {
-          nuget push $package.FullName -Source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" -ApiKey ${{ secrets.GITHUB_TOKEN }}
+          dotnet nuget push $package.FullName --source "github" --api-key ${{ secrets.GITHUB_TOKEN }}
         }
