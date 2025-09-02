@@ -109,6 +109,7 @@ $RedWinePackagesToInstall = @(
     "trufflehog"
     "watson"
     "whisker"
+    "windows-update"
     "winpeas"
     "winpwn"
     "yara"
@@ -164,11 +165,6 @@ Remove-Item $RedWineFolderPath -Force -Recurse
 foreach ($Package in $AppxProvisionedPackagesToRemove) {
     Get-AppxProvisionedPackage -Online | Where-Object { $_.DisplayName -match $Package } | Remove-AppxProvisionedPackage -Online -AllUsers
 }
-
-# Update the system.
-Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
-Install-Module -Name PSWindowsUpdate -Force
-Get-WindowsUpdate -Install -AcceptAll
 
 # TODO: Permanently remove Windows Defender.
 # Add-MpPreference -ExclusionPath $Env:TEMP
