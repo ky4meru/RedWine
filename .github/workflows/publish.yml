@@ -16,16 +16,16 @@ jobs:
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v2
 
-    - name: Install Chocolatey
+    - name: Build Chocolatey packages
       run: |
-        Set-ExecutionPolicy Bypass -Scope Process -Force
-        iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+        $packages = Get-ChildItem ./packages -Directory -Name
+        foreach ($package in $packages) {
+          choco pack ./packages/$package/$package.nuspec --out ./packages/$package
+        }
 
-    - name: Build Chocolatey package
+    - name: Push NuGet packages to GitHub
       run: |
-        choco pack
-
-    - name: Push NuGet package to GitHub Packages
-      run: |
-        $nupkg = Get-ChildItem *.nupkg | Select-Object -First 1
-        nuget push $nupkg.FullName -Source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" -ApiKey ${{ secrets.GITHUB_TOKEN }}
+        $packages = Get-ChildItem *.nupkg -Recurse
+        foreach ($package in $packages) {
+          nuget push $package.FullName -Source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" -ApiKey ${{ secrets.GITHUB_TOKEN }}
+        }
