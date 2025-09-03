@@ -1,0 +1,12 @@
+{
+  "username": "Ky4meru",
+  "useremail": "ky4meru@pm.me",
+  "sources": [
+    {
+      "name": "RedWine",
+      "type": "local",
+      "path": ".\\site",
+      "baseURI": "https://ky4meru.github.io/RedWine/"
+    }
+  ]
+}
