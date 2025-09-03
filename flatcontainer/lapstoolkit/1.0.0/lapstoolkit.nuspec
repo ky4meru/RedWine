@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>lapstoolkit</id>
+    <version>1.0.0</version>
+    <title>LAPSToolkit</title>
+    <authors>@leoloobeek</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/leoloobeek/LAPSToolkit</projectUrl>
+    <description>Tool to audit and attack LAPS environments</description>
+  </metadata>
+</package>

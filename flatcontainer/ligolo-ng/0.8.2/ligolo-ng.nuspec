@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ligolo-ng</id>
+    <version>0.8.2</version>
+    <title>Ligolo-ng</title>
+    <authors>@nicocha30</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/nicocha30/ligolo-ng</projectUrl>
+    <description>An advanced, yet simple, tunneling/pivoting tool that uses a TUN interface</description>
+  </metadata>
+</package>

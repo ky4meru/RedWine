@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>powersploit</id>
+    <version>3.0.0</version>
+    <title>PowerSploit</title>
+    <authors>@PowerShellMafia</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/PowerShellMafia/PowerSploit</projectUrl>
+    <description>A PowerShell Post-Exploitation Framework</description>
+  </metadata>
+</package>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>watson</id>
+    <version>2.0.0</version>
+    <title>Watson</title>
+    <authors>@rasta-mouse</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/rasta-mouse/Watson</projectUrl>
+    <description>Enumerate missing KBs and suggest exploits for useful Privilege Escalation vulnerabilities</description>
+    <dependencies>
+      <dependency id="dotnet-frameworks" />
+    </dependencies>
+  </metadata>
+</package>

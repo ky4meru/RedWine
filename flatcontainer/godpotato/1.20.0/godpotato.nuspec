@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>godpotato</id>
+    <version>1.20.0</version>
+    <title>GodPotato</title>
+    <authors>@BeichenDream</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/BeichenDream/GodPotato</projectUrl>
+    <description>Enables privilege escalation in Windows 2012 - Windows 2022, now as long as you have "ImpersonatePrivilege" permission</description>
+  </metadata>
+</package>

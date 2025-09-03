@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>tokenuniverse</id>
+    <version>0.5.0</version>
+    <title>TokenUniverse</title>
+    <authors>@diversenok</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/diversenok/TokenUniverse</projectUrl>
+    <description>An advanced tool for working with access tokens and Windows security policy</description>
+  </metadata>
+</package>

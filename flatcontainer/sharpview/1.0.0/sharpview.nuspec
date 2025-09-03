@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>sharpview</id>
+    <version>1.0.0</version>
+    <title>SharpView</title>
+    <authors>@tevora-threat</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/tevora-threat/SharpView</projectUrl>
+    <description>C# implementation of harmj0y's PowerView</description>
+    <dependencies>
+      <dependency id="dotnet-frameworks" />
+    </dependencies>
+  </metadata>
+</package>

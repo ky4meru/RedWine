@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>trufflehog</id>
+    <version>3.90.5</version>
+    <title>TruffleHog</title>
+    <authors>@trufflesecurity</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/trufflesecurity/trufflehog</projectUrl>
+    <description>Find, verify, and analyze leaked credentials</description>
+  </metadata>
+</package>

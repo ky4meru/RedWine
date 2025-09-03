@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>msolspray</id>
+    <version>1.0.0</version>
+    <title>MSOLSpray</title>
+    <authors>@dafthack</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/dafthack/MSOLSpray</projectUrl>
+    <description>A password spraying tool for Microsoft Online accounts (Azure/O365)</description>
+  </metadata>
+</package>
