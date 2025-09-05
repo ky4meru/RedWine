@@ -39,7 +39,7 @@ jobs:
           if ($packages.Count -eq 0) {
             Write-Host "No .nupkg files found. Skipping push."
           } else {
-            .\tools\SleetExe\tools\Sleet.exe push --config ./site/sleet.json --source RedWine $packages.FullName
+            .\tools\SleetExe\tools\Sleet.exe push --force --config ./site/sleet.json --source RedWine $packages.FullName
           }
 
       - name: Validate feed
