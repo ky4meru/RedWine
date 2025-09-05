@@ -36,15 +36,17 @@ jobs:
       - name: Push packages to feed
         run: |
           $packages = Get-ChildItem *.nupkg -Recurse -ErrorAction SilentlyContinue
+          $sleet = (Resolve-Path .\tools\SleetExe\tools\Sleet.exe).Path
           if ($packages.Count -eq 0) {
             Write-Host "No .nupkg files found. Skipping push."
           } else {
-            .\tools\SleetExe\tools\Sleet.exe push --config ./site/sleet.json --source RedWine $packages.FullName --force
+            & $sleet push --config ./site/sleet.json --source RedWine $packages.FullName --force
           }
 
       - name: Validate feed
         run: |
-          .\tools\SleetExe\tools\Sleet.exe validate --config ./site/sleet.json --source RedWine
+          $sleet = (Resolve-Path .\tools\SleetExe\tools\Sleet.exe).Path
+          & $sleet validate --config ./site/sleet.json --source RedWine
 
       - name: Commit and push feed updates to gh-pages
         run: |
