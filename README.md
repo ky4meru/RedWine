@@ -4,7 +4,7 @@
 <hr>
 
 > [!IMPORTANT]
-> Read the [considerations before installation](./README.md#considerations-before-installation).
+> [RTFM](https://github.com/ky4meru/RedWine#rtfm) before using this.
 
 ## TL;DR
 
@@ -32,10 +32,16 @@ The installation of all packages might be long. Grab a glass and **enjoy *RedWin
 
 ### Considerations before installation
 
+#### Windows host
+
+*RedWine* is designed to work on either physical devices or virtual machines. In both cases, make sure to have a **working backup or a snapshot** before using this project.
+
+#### Antiviral engines
+
 *RedWine* manipulates files that are considered as threats by all antiviral engines. It will - *for sure* - be annoying during the installation of most packages. To avoid this, make sure that `$Env:ChocolateyInstall` - *which will contain all the RedWine packages* - is part of the exclusion lists of the antiviral engines prior to any package installation.
 
 > [!NOTE]
-> You are free to set `$Env:ChocolateyInstall` prior to the Chocolatey installation. This possibility is interesting, especially to store packages in a patch that is already excluded by the antiviral engines on the host.
+> You are free to set `$Env:ChocolateyInstall` prior to the Chocolatey installation. This possibility is interesting, especially to install packages at a path that is already excluded by the antiviral engines on the host.
 >
 > ```powershell
 > [Environment]::SetEnvironmentVariable("ChocolateyInstall", "$CustomPath", [System.EnvironmentVariableTarget]::Machine)
