@@ -7,50 +7,61 @@
 
 *RedWine* is both:
 * A static [NuGet](https://www.nuget.org/) feed powered by [Sleet](https://github.com/emgarten/Sleet) hosting custom [Chocolatey](https://chocolatey.org/) packages.
-* A standalone PowerShell script designed for the complete installation of an offensive Windows host.
+* [Boxstarter](https://boxstarter.org/) script designed for the complete installation of an offensive Windows host.
 
-Therefore, *RedWine* is designed to be used as a public source by Chocolatey.
+Therefore, *RedWine* is designed to be used as a public source by Chocolatey...
 
 ```powershell
-# Add RedWine as a source.
 choco source add --name='RedWine' --source="https://ky4meru.github.io/RedWine/index.json"
-
-# List available packages.
 choco search --source='RedWine'
-
-# Instal a package.
 choco install $PackageName --source='RedWine'
 ```
 
-To perform a complete installation (all *RedWine* packages), start a PowerShell session **as administrator** then run the following commands.
+... but also provides a complete installation script - *i.e. all RedWine package, and even more*.
 
 ```powershell
-# Optional: only if you want to install Chocolatey at a custom path.
-[Environment]::SetEnvironmentVariable("ChocolateyInstall", "$Path", [System.EnvironmentVariableTarget]::Machine)
-Invoke-Expression (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/ky4meru/RedWine/master/start.ps1')
+START https://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/ky4meru/RedWine/master/install.ps1
 ```
+
+**Enjoy RedWine, with moderation.**
 
 ## RTFM
 
 ### Considerations before installation
 
-*RedWine* manipulates files that are considered as threats by all antiviral engines. It will - *for sure* - be annoying during the installation of most packages. To avoid this, *RedWine* proposes 2 different behaviors.
+*RedWine* manipulates files that are considered as threats by all antiviral engines. It will - *for sure* - be annoying during the installation of most packages. To avoid this, make sure that `$Env:ChocolateyInstall` is part of the exclusion lists of the antiviral engines prior to any installation. Below are some examples with Windows Defender.
 
-1. **`$Env:ChocolateyInstall` is set prior to *RedWine*'s execution:** it assumes that this custom path is whitelisted by the antiviral engines potentially running on the Windows host. Therefore, no additional actions are taken.
-2.  **`$Env:ChocolateyInstall` is not set:** it assumes that only Windows Defender is running on the Windows host. Therefore, *RedWine* permanently adds `C:\ProgramData\Chocolatey` to the Windows Defender's exclusion lists.
+```powershell
+# Option #1: exclude the default installation path of Chocolatey.
+Add-MpPreference -ExclusionPath "$Env:ProgramData\chocolatey"
 
-Basically, option `1` is designed for cases where *RedWine* is deployed on a Windows host provided by a client, while option `2` is more for virtual machines deployments.
+# Option #2: set the installation path of Chocolatey to a specific location that is already excluded.
+[Environment]::SetEnvironmentVariable("ChocolateyInstall", "$CustomPath", [System.EnvironmentVariableTarget]::Machine)
+```
 
-### What it does
+### Packages
 
-When executed, *RedWine* will perform following operations.
- 
-* Install [Chocolatey](https://chocolatey.org/).
-* Download and install a multitude of useful offensive tools.
-* Uninstall plenty of useless Windows built-in applications.
-* Permanently activate Windows with [Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts).
-* Update the system.
-* Reboot.
+*Redwine* provides different types of packages: portable executables, PowerShell modules, Python packages and Visual Studio solutions. [Packages templates](./templates/) are provided for contribution.
+
+#### Portable executable
+
+Portable executables are installed in `$Env:ChocolateyInstall\bin`, which is part of the `PATH`.
+
+#### PowerShell modules
+
+PowerShell modules are downloaded then automatically added to the `$PROFILE`, so the cmdlets are automatically loaded at each PowerShell session.
+
+#### Python packages
+
+Python packages are installed with [pipx](https://github.com/pypa/pipx) for the conveniance of self-managed isolated virtual environments. For a complete integration with Chocolatey, and to avoid being bothered by antiviral engines, these environement variables are set on the system.
+
+* `PIPX_HOME` is set to `$Env:ChocolateyInstall\pipx`.
+* `PIPX_BIN` is set to `$Env:ChocolateyInstall\bin`
+* `TMP` and `TEMP` are temporary set to `$Env:ChocolateyInstall\temp` during the installation of a package, then reverted back. This is due to pipx unpacking stuff in `TEMP`.
+
+#### Visual Studio solutions
+
+Solutions are downloaded and built on the system directly. Then, compiled executables are shimed in `$Env:ChocolateyInstall\bin`, which is part of the `PATH`.
 
 ## License
 
