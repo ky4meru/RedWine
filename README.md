@@ -10,7 +10,7 @@
 
 *RedWine* is a static [NuGet](https://www.nuget.org/) feed, powered by [Sleet](https://github.com/emgarten/Sleet), hosting custom offensive [Chocolatey](https://chocolatey.org/) packages. Therefore, it is designed to be used as a **public** source by Chocolatey.
 
-[Install Chocolatey](https://chocolatey.org/install#individual), then run the following commands **as administrator**.
+[Install Chocolatey](https://chocolatey.org/install#individual) before using the following commands **as administrator**.
 
 ```powershell
 # Add RedWine as a source for Chocolatey.
