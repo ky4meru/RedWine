@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>redwine.gowitness</id>
+    <version>3.0.5</version>
+    <title>Gowitness</title>
+    <authors>@sensepost</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/sensepost/gowitness</projectUrl>
+    <description>A golang, web screenshot utility using Chrome Headless</description>
+  </metadata>
+</package>

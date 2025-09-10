@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>redwine.juicypotato</id>
+    <version>0.1.0</version>
+    <title>JuicyPotato</title>
+    <authors>@ohpe</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/ohpe/juicy-potato</projectUrl>
+    <description>A sugared version of RottenPotatoNG, with a bit of juice, i.e. another Local Privilege Escalation tool, from a Windows Service Accounts to NT AUTHORITY\SYSTEM</description>
+  </metadata>
+</package>

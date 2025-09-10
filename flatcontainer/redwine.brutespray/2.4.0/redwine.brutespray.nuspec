@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>redwine.brutespray</id>
+    <version>2.4.0</version>
+    <title>BruteSpray</title>
+    <authors>@x90skysn3k</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/x90skysn3k/brutespray</projectUrl>
+    <description>Bruteforcing from various scanner output - Automatically attempts default creds on found services</description>
+  </metadata>
+</package>

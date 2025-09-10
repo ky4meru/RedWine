@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.sharpdpapi</id>
+    <version>1.12.0</version>
+    <title>SharpDPAPI</title>
+    <authors>@GhostPack</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/GhostPack/SharpDPAPI</projectUrl>
+    <description>SharpDPAPI is a C# port of some Mimikatz DPAPI functionality</description>
+    <dependencies>
+      <dependency id="redwine.dotnet-35" />
+    </dependencies>
+  </metadata>
+</package>

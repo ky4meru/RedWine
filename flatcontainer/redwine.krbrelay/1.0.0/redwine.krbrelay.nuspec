@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.krbrelay</id>
+    <version>1.0.0</version>
+    <title>KrbRelay</title>
+    <authors>@cube0x0</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/cube0x0/KrbRelay</projectUrl>
+    <description>Framework for Kerberos relaying</description>
+    <dependencies>
+      <dependency id="redwine.dotnet-472" />
+    </dependencies>
+  </metadata>
+</package>

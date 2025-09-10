@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.ldapsearch-ad</id>
+    <version>2024.12.10</version>
+    <title>ldapsearch-ad</title>
+    <authors>@yaap7</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/yaap7/ldapsearch-ad</projectUrl>
+    <description>Python3 script to quickly get various information from a domain controller through his LDAP service</description>
+    <dependencies>
+      <dependency id="pipx" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.sharpwmi</id>
+    <version>1.0.0</version>
+    <title>SharpWMI</title>
+    <authors>@GhostPack</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/GhostPack/SharpWMI</projectUrl>
+    <description>SharpWMI is a C# implementation of various WMI functionality</description>
+    <dependencies>
+      <dependency id="redwine.dotnet-40" />
+    </dependencies>
+  </metadata>
+</package>

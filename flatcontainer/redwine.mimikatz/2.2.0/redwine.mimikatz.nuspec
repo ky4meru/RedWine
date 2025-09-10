@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>redwine.mimikatz</id>
+    <version>2.2.0</version>
+    <title>Mimikatz</title>
+    <authors>@gentilkiwi</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/gentilkiwi/mimikatz</projectUrl>
+    <description>A little tool to play with Windows security</description>
+  </metadata>
+</package>

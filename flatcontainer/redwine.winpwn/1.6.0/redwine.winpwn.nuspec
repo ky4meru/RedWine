@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>redwine.winpwn</id>
+    <version>1.6.0</version>
+    <title>WinPwn</title>
+    <authors>@S3cur3Th1sSh1t</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/S3cur3Th1sSh1t/WinPwn</projectUrl>
+    <description>Automation for internal Windows Penetrationtest / AD-Security</description>
+  </metadata>
+</package>

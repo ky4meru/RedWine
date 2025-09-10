@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.dotnet-35</id>
+    <version>1.0.0</version>
+    <title>.NET Framework 3.5</title>
+    <authors>@Microsoft</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://learn.microsoft.com/en-us/dotnet/framework/</projectUrl>
+    <description>.NET Framework is a technology that supports building and running Windows apps and web services</description>
+    <dependencies>
+      <dependency id="visualstudio2019community" />
+    </dependencies>
+  </metadata>
+</package>

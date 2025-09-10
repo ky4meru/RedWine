@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>redwine.privesccheck</id>
+    <version>2025.8.28</version>
+    <title>PrivescCheck</title>
+    <authors>@itm4n</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/itm4n/PrivescCheck</projectUrl>
+    <description>Privilege Escalation Enumeration Script for Windows</description>
+  </metadata>
+</package>

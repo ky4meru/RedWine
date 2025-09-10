@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.sharpgpoabuse</id>
+    <version>1.0.0</version>
+    <title>SharpGPOAbuse</title>
+    <authors>@FSecureLABS</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/FSecureLABS/SharpGPOAbuse</projectUrl>
+    <description>SharpGPOAbuse is a .NET application written in C# that can be used to take advantage of a user's edit rights on a Group Policy Object (GPO) in order to compromise the objects that are controlled by that GPO</description>
+    <dependencies>
+      <dependency id="redwine.dotnet-35" />
+    </dependencies>
+  </metadata>
+</package>
