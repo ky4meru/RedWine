@@ -20,10 +20,10 @@ choco source add --name='RedWine' --source='https://ky4meru.github.io/RedWine/in
 choco search --source='RedWine'
 
 # Install a RedWine package.
-choco install redwine.$PackageName
+choco install redwine.$PackageName -y
 
 # Install all RedWine packages.
-choco install redwine.all
+choco install redwine.all -y
 ```
 
 The installation of all packages might be long. Grab a glass and **enjoy *RedWine*... with moderation.**
@@ -32,7 +32,18 @@ The installation of all packages might be long. Grab a glass and **enjoy *RedWin
 
 ### Considerations before installation
 
-*RedWine* manipulates files that are considered as threats by all antiviral engines. It will - *for sure* - be annoying during the installation of most packages. To avoid this, make sure that `$Env:ChocolateyInstall` is part of the exclusion lists of the antiviral engines prior to any package installation. Below is the command to run for Windows Defender.
+*RedWine* manipulates files that are considered as threats by all antiviral engines. It will - *for sure* - be annoying during the installation of most packages. To avoid this, make sure that `$Env:ChocolateyInstall` - *which will contain all the RedWine packages* - is part of the exclusion lists of the antiviral engines prior to any package installation.
+
+> [!NOTE]
+> You are free to set `$Env:ChocolateyInstall` prior to the Chocolatey installation. This possibility is interesting, especially to store packages in a patch that is already excluded by the antiviral engines on the host.
+>
+> ```powershell
+> [Environment]::SetEnvironmentVariable("ChocolateyInstall", "$CustomPath", [System.EnvironmentVariableTarget]::Machine)
+> ```
+>
+> If you do not manually set it, `$Env:ChocolateyInstall` is set to `$Env:ProgramData\chocolatey` by default during Chocolatey installation process.
+
+To exclude the Chocolatey folder from Windows Defender scans, run the following PowerShell command **as adminsitrator**. For other antiviral engines, please refer to the associated documentation.
 
 ```powershell
 Add-MpPreference -ExclusionPath "$Env:ChocolateyInstall"
