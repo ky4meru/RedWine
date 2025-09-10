@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>shadowspray</id>
+    <id>redwine.shadowspray</id>
     <version>1.0</version>
     <title>ShadowSpray</title>
     <authors>@Dec0ne</authors>
     <projectUrl>https://github.com/Dec0ne/ShadowSpray</projectUrl>
     <description>A tool to spray Shadow Credentials across an entire domain in hopes of abusing long forgotten GenericWrite/GenericAll DACLs over other objects in the domain</description>
     <dependencies>
-      <dependency id="dotnet-frameworks" />
+      <dependency id="redwine.dotnet-48" />
     </dependencies>
   </metadata>
 </package>

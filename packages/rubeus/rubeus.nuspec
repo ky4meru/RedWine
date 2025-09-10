@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>rubeus</id>
+    <id>redwine.rubeus</id>
     <version>1.6.4</version>
     <title>Rubeus</title>
     <authors>@GhostPack</authors>
     <projectUrl>https://github.com/GhostPack/Rubeus</projectUrl>
     <description>Trying to tame the three-headed dogs</description>
     <dependencies>
-      <dependency id="dotnet-frameworks" />
+      <dependency id="redwine.dotnet-35" />
     </dependencies>
   </metadata>
 </package>

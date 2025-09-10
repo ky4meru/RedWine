@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>lazagne</id>
+    <id>redwine.lazagne</id>
     <version>2.4.7</version>
     <title>LaZagne</title>
     <authors>@AlessandroZ</authors>

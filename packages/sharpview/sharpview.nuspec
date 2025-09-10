@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>sharpview</id>
+    <id>redwine.sharpview</id>
     <version>1.0</version>
     <title>SharpView</title>
     <authors>@tevora-threat</authors>
     <projectUrl>https://github.com/tevora-threat/SharpView</projectUrl>
     <description>C# implementation of harmj0y's PowerView</description>
     <dependencies>
-      <dependency id="dotnet-frameworks" />
+      <dependency id="redwine.dotnet-452" />
     </dependencies>
   </metadata>
 </package>

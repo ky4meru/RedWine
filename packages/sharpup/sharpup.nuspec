@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>sharpup</id>
+    <id>redwine.sharpup</id>
     <version>1.0</version>
     <title>SharpUp</title>
     <authors>@GhostPack</authors>
     <projectUrl>https://github.com/GhostPack/SharpUp</projectUrl>
     <description>SharpUp is a C# port of various PowerUp functionality</description>
     <dependencies>
-      <dependency id="dotnet-frameworks" />
+      <dependency id="redwine.dotnet-35" />
     </dependencies>
   </metadata>
 </package>

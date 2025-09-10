@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>krbrelayup</id>
+    <id>redwine.krbrelayup</id>
     <version>1.0</version>
     <title>KrbRelayUp</title>
     <authors>@Dec0ne</authors>
     <projectUrl>https://github.com/Dec0ne/KrbRelayUp</projectUrl>
     <description>A universal no-fix local privilege escalation in windows domain environments where LDAP signing is not enforced (the default settings)</description>
     <dependencies>
-      <dependency id="dotnet-frameworks" />
+      <dependency id="redwine.dotnet-472" />
     </dependencies>
   </metadata>
 </package>

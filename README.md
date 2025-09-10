@@ -3,40 +3,39 @@
 <p align="center">Public Chocolatey repository to automate offensive Windows configuration</p>
 <hr>
 
+> [!IMPORTANT]
+> Read the [considerations before installation](./README.md#considerations-before-installation).
+
 ## TL;DR
 
-*RedWine* is both:
-* A static [NuGet](https://www.nuget.org/) feed powered by [Sleet](https://github.com/emgarten/Sleet) hosting custom [Chocolatey](https://chocolatey.org/) packages.
-* [Boxstarter](https://boxstarter.org/) script designed for the complete installation of an offensive Windows host.
+*RedWine* is a static [NuGet](https://www.nuget.org/) feed, powered by [Sleet](https://github.com/emgarten/Sleet), hosting custom offensive [Chocolatey](https://chocolatey.org/) packages. Therefore, it is designed to be used as a **public** source by Chocolatey.
 
-Therefore, *RedWine* is designed to be used as a public source by Chocolatey...
+[Install Chocolatey](https://chocolatey.org/install#individual), then run the following commands **as administrator**.
 
 ```powershell
-choco source add --name='RedWine' --source="https://ky4meru.github.io/RedWine/index.json"
+# Add RedWine as a source for Chocolatey.
+choco source add --name='RedWine' --source='https://ky4meru.github.io/RedWine/index.json'
+
+# List available RedWine packages.
 choco search --source='RedWine'
-choco install $PackageName --source='RedWine'
+
+# Install a RedWine package.
+choco install redwine.$PackageName
+
+# Install all RedWine packages.
+choco install redwine.all
 ```
 
-... but also provides a complete installation script - *i.e. all RedWine package, and even more*.
-
-```powershell
-START https://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/ky4meru/RedWine/master/install.ps1
-```
-
-**Enjoy RedWine, with moderation.**
+The installation of all packages might be long. Grab a glass and **enjoy *RedWine*... with moderation.**
 
 ## RTFM
 
 ### Considerations before installation
 
-*RedWine* manipulates files that are considered as threats by all antiviral engines. It will - *for sure* - be annoying during the installation of most packages. To avoid this, make sure that `$Env:ChocolateyInstall` is part of the exclusion lists of the antiviral engines prior to any installation. Below are some examples with Windows Defender.
+*RedWine* manipulates files that are considered as threats by all antiviral engines. It will - *for sure* - be annoying during the installation of most packages. To avoid this, make sure that `$Env:ChocolateyInstall` is part of the exclusion lists of the antiviral engines prior to any package installation. Below is the command to run for Windows Defender.
 
 ```powershell
-# Option #1: exclude the default installation path of Chocolatey.
-Add-MpPreference -ExclusionPath "$Env:ProgramData\chocolatey"
-
-# Option #2: set the installation path of Chocolatey to a specific location that is already excluded.
-[Environment]::SetEnvironmentVariable("ChocolateyInstall", "$CustomPath", [System.EnvironmentVariableTarget]::Machine)
+Add-MpPreference -ExclusionPath "$Env:ChocolateyInstall"
 ```
 
 ### Packages
@@ -62,6 +61,20 @@ Python packages are installed with [pipx](https://github.com/pypa/pipx) for the 
 #### Visual Studio solutions
 
 Solutions are downloaded and built on the system directly. Then, compiled executables are shimed in `$Env:ChocolateyInstall\bin`, which is part of the `PATH`.
+
+### Static NuGet feed
+
+Because GitHub do not support unauthenticated fetch of public NuGet packages, *RedWine* leverages [Sleet](https://github.com/emgarten/Sleet) to host its packages on a static NuGet feed available at https://ky4meru.github.io/RedWine/.
+
+Every time a push is made on the `main` branch, a [GitHub workflow](./.github/workflows/publish.yml) is triggered which basically perform the following steps.
+
+1. Pack the packages.
+2. Push them in the feed.
+3. Publish them via GitHub Pages on the branch `gh-pages`.
+
+## Acknowledgements
+
+To [Mandiant](https://github.com/mandiant) for their work on [CommandoVM](https://github.com/mandiant/commando-vm), which definitely inspired this project.
 
 ## License
 

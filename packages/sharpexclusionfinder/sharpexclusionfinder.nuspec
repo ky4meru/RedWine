@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>sharpexclusionfinder</id>
+    <id>redwine.sharpexclusionfinder</id>
     <version>1.0</version>
     <title>SharpExclusionFinder</title>
     <authors>@Friends-Security</authors>

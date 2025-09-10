@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>chisel</id>
+    <id>redwine.chisel</id>
     <version>1.10.1</version>
     <title>Chisel</title>
     <authors>@jpillora</authors>

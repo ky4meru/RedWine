@@ -8,7 +8,7 @@
     <projectUrl>[[ProjectUrl]]</projectUrl>
     <description>[[Description]]</description>
     <dependencies>
-      <dependency id="dotnet-frameworks" />
+      <dependency id="redine.dotnet-[[DotNetVersion]]" />
     </dependencies>
   </metadata>
 </package>

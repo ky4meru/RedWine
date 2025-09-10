@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.dotnet-40</id>
+    <version>1.0.0</version>
+    <title>.NET Framework 4.0</title>
+    <authors>@Microsoft</authors>
+    <projectUrl>https://learn.microsoft.com/en-us/dotnet/framework/</projectUrl>
+    <description>.NET Framework is a technology that supports building and running Windows apps and web services</description>
+    <dependencies>
+      <dependency id="visualstudio2019community" />
+    </dependencies>
+  </metadata>
+</package>

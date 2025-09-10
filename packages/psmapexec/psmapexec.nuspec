@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>psmapexec</id>
+    <id>redwine.psmapexec</id>
     <version>0.8.1</version>
     <title>PsMapExec</title>
     <authors>@The-Viper-One</authors>

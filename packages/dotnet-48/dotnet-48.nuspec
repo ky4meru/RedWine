@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>dotnet-frameworks</id>
+    <id>redwine.dotnet-48</id>
     <version>1.0.0</version>
-    <title>.NET Frameworks</title>
+    <title>.NET Framework 4.8</title>
     <authors>@Microsoft</authors>
     <projectUrl>https://learn.microsoft.com/en-us/dotnet/framework/</projectUrl>
     <description>.NET Framework is a technology that supports building and running Windows apps and web services</description>
     <dependencies>
       <dependency id="visualstudio2019community" />
-      <dependency id="visualstudio2022community" />
     </dependencies>
   </metadata>
 </package>

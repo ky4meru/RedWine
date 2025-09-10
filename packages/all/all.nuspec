@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.all</id>
+    <version>0.1</version>
+    <title>RedWine</title>
+    <authors>@ky4meru</authors>
+    <projectUrl>https://github.com/ky4meru/RedWine</projectUrl>
+    <description>All RedWine packages</description>
+  </metadata>
+  <dependencies>
+    <dependency id="redwine.abuseazureapipermissions" />
+    <dependency id="redwine.adrecon" />
+    <dependency id="redwine.adsearch" />
+    <dependency id="redwine.az" />
+    <dependency id="redwine.azurehound" />
+    <dependency id="redwine.bloodhound-cli" />
+    <dependency id="redwine.bloodyad" />
+    <dependency id="redwine.bruteshark" />
+    <dependency id="redwine.brutespray" />
+    <dependency id="redwine.chisel" />
+    <dependency id="redwine.domainpasswordspray" />
+    <dependency id="redwine.dumpaadsynccreds" />
+    <dependency id="redwine.edrsilencer" />
+    <dependency id="redwine.gitleaks" />
+    <dependency id="redwine.gobuster" />
+    <dependency id="redwine.godpotato" />
+    <dependency id="redwine.gowitness" />
+    <dependency id="redwine.juicypotato" />
+    <dependency id="redwine.kerbrute" />
+    <dependency id="redwine.krbrelay" />
+    <dependency id="redwine.krbrelayup" />
+    <dependency id="redwine.lapstoolkit" />
+    <dependency id="redwine.lazagne" />
+    <dependency id="redwine.ldapsearch-ad" />
+    <dependency id="redwine.ligolo-ng" />
+    <dependency id="redwine.mailsniper" />
+    <dependency id="redwine.mangle" />
+    <dependency id="redwine.microsoft-activation-scripts" />
+    <dependency id="redwine.mimikatz" />
+    <dependency id="redwine.msolspray" />
+    <dependency id="redwine.naabu" />
+    <dependency id="redwine.netexec" />
+    <dependency id="redwine.nuclei" />
+    <dependency id="redwine.petitpotam" />
+    <dependency id="redwine.pipx" />
+    <dependency id="redwine.powercat" />
+    <dependency id="redwine.powerlurk" />
+    <dependency id="redwine.powermad" />
+    <dependency id="redwine.powersploit" />
+    <dependency id="redwine.powerupsql" />
+    <dependency id="redwine.printspoofer" />
+    <dependency id="redwine.privesccheck" />
+    <dependency id="redwine.psmapexec" />
+    <dependency id="redwine.roguepotato" />
+    <dependency id="redwine.rubeus" />
+    <dependency id="redwine.rustscan" />
+    <dependency id="redwine.safetykatz" />
+    <dependency id="redwine.seatbelt" />
+    <dependency id="redwine.shadowspray" />
+    <dependency id="redwine.sharpdpapi" />
+    <dependency id="redwine.sharpersist" />
+    <dependency id="redwine.sharpexclusionfinder" />
+    <dependency id="redwine.sharpgpoabuse" />
+    <dependency id="redwine.sharphound" />
+    <dependency id="redwine.sharpsccm" />
+    <dependency id="redwine.sharpsystemtriggers" />
+    <dependency id="redwine.sharpup" />
+    <dependency id="redwine.sharpview" />
+    <dependency id="redwine.sharpwmi" />
+    <dependency id="redwine.snaffler" />
+    <dependency id="redwine.spoolfool" />
+    <dependency id="redwine.sqlrecon" />
+    <dependency id="redwine.standin" />
+    <dependency id="redwine.sweetpotato" />
+    <dependency id="redwine.threatcheck" />
+    <dependency id="redwine.tokenuniverse" />
+    <dependency id="redwine.trufflehog" />
+    <dependency id="redwine.watson" />
+    <dependency id="redwine.whisker" />
+    <dependency id="redwine.winpeas" />
+    <dependency id="redwine.winpwn" />
+    <dependency id="redwine.yara" />
+    <dependency id="redwine.zaproxy" />
+  </dependencies>
+</package>

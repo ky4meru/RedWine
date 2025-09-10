@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>whisker</id>
+    <id>redwine.whisker</id>
     <version>1.0</version>
     <title>Whisker</title>
     <authors>@eladshamir</authors>
     <projectUrl>https://github.com/eladshamir/Whisker</projectUrl>
     <description>Whisker is a C# tool for taking over Active Directory user and computer accounts by manipulating their msDS-KeyCredentialLink attribute, effectively adding "Shadow Credentials" to the target account</description>
     <dependencies>
-      <dependency id="dotnet-frameworks" />
+      <dependency id="redwine.dotnet-472" />
     </dependencies>
   </metadata>
 </package>

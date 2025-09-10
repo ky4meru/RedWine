@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>gowitness</id>
+    <id>redwine.gowitness</id>
     <version>3.0.5</version>
     <title>Gowitness</title>
     <authors>@sensepost</authors>
