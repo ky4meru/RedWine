@@ -9,6 +9,7 @@
     <description>Local Service to SYSTEM privilege escalation from Windows 7 to Windows 10 / Server 2019</description>
     <dependencies>
       <dependency id="redwine.dotnet-461" />
+      <dependency id="nuget.commandline" />
     </dependencies>
   </metadata>
 </package>

@@ -9,6 +9,7 @@
     <description>C# implementation of harmj0y's PowerView</description>
     <dependencies>
       <dependency id="redwine.dotnet-452" />
+      <dependency id="nuget.commandline" />
     </dependencies>
   </metadata>
 </package>
