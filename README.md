@@ -3,38 +3,30 @@
 <p align="center">Public Chocolatey repository to automate offensive Windows configuration</p>
 <hr>
 
+*RedWine* is a static, public and unauthenticated [NuGet](https://www.nuget.org/) feed, powered by [Sleet](https://github.com/emgarten/Sleet), hosting custom offensive [Chocolatey](https://chocolatey.org/) packages.
+
 > [!IMPORTANT]
-> [RTFM](https://github.com/ky4meru/RedWine#rtfm) before using this.
+> If it is your first time here, [RTFM](https://github.com/ky4meru/RedWine#rtfm).
 
 ## TL;DR
 
-*RedWine* is a static [NuGet](https://www.nuget.org/) feed, powered by [Sleet](https://github.com/emgarten/Sleet), hosting custom offensive [Chocolatey](https://chocolatey.org/) packages. Therefore, it is designed to be used as a **public** source by Chocolatey.
+1. [Install Chocolatey](https://chocolatey.org/install#individual).
+2. Add *RedWine* as source: `choco source add --name='RedWine' --source='https://ky4meru.github.io/RedWine/index.json'`.
+3. List available packages: `choco search --source='RedWine'`.
+4. Install a specific package: `choco install redwine.$PackageName --yes --force`...
+5. ... or install all packages: `choco install redwine.all --yes --force`.
 
-[Install Chocolatey](https://chocolatey.org/install#individual) before using the following commands **as administrator**.
-
-```powershell
-# Add RedWine as a source for Chocolatey.
-choco source add --name='RedWine' --source='https://ky4meru.github.io/RedWine/index.json'
-
-# List available RedWine packages.
-choco search --source='RedWine'
-
-# Install a RedWine package.
-choco install redwine.$PackageName --yes --force
-
-# Install all RedWine packages.
-choco install redwine.all --yes --force
-```
-
-The installation of all packages might be long. Grab a glass and **enjoy *RedWine*... with moderation.**
+The installation of `redwine.all` might be long, especially because of `redwine.dotnet-*` packages. Be patient, grab a glass, and **enjoy *RedWine*... with moderation.**
 
 ## RTFM
 
 ### Considerations before installation
 
-#### Windows host
+#### Host's prerequisites
 
 *RedWine* is designed to work on either physical devices or virtual machines. In both cases, make sure to have a **working backup or a snapshot** before using this project.
+
+At this time, *RedWine* is developed and tested - *then supported* - on [Windows 10 Business 22H2](https://massgrave.dev/windows_10_links). Windows Updates must be fully applied before installing packages with Chocolatey.
 
 #### Antiviral engines
 
