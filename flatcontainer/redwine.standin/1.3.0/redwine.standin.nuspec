@@ -10,6 +10,7 @@
     <description>StandIn is a small .NET35/45 AD post-exploitation toolkit</description>
     <dependencies>
       <dependency id="redwine.dotnet-45" />
+      <dependency id="nuget.commandline" />
     </dependencies>
   </metadata>
 </package>
