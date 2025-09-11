@@ -20,10 +20,10 @@ choco source add --name='RedWine' --source='https://ky4meru.github.io/RedWine/in
 choco search --source='RedWine'
 
 # Install a RedWine package.
-choco install redwine.$PackageName -y
+choco install redwine.$PackageName --yes --force
 
 # Install all RedWine packages.
-choco install redwine.all -y
+choco install redwine.all --yes --force
 ```
 
 The installation of all packages might be long. Grab a glass and **enjoy *RedWine*... with moderation.**
@@ -65,7 +65,14 @@ Portable executables are installed in `$Env:ChocolateyInstall\bin`, which is par
 
 #### PowerShell modules
 
-PowerShell modules are downloaded then automatically added to the `$PROFILE`, so the cmdlets are automatically loaded at each PowerShell session.
+PowerShell modules are downloaded then automatically imported in the PowerShell sessions via the `$PROFILE`.
+
+> [!NOTE]
+> If the `$PROFILE` cannot be loaded, change the [Execution Policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5) on the Windows host **as administrator**.
+>
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
+> ```
 
 #### Python packages
 
