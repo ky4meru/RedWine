@@ -10,6 +10,7 @@
     <description>A tool to help query AD via the LDAP protocol</description>
     <dependencies>
       <dependency id="redwine.dotnet-472" />
+      <dependency id="nuget.commandline" />
     </dependencies>
   </metadata>
 </package>
