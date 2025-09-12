@@ -8,7 +8,8 @@
     <projectUrl>https://github.com/pypa/pipx</projectUrl>
     <description>Install and Run Python Applications in Isolated Environments</description>
     <dependencies>
-        <dependency id="python" version="3.13.7" />
+      <dependency id="git" />
+      <dependency id="python" />
     </dependencies>
   </metadata>
 </package>

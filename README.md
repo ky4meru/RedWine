@@ -106,7 +106,7 @@ Every time a push is made on the `main` branch, a [GitHub workflow](./.github/wo
 
 1. Pack the packages.
 2. Push them in the feed.
-3. Publish them via GitHub Pages on the branch `gh-pages`.
+3. Publish them via GitHub Pages on the branch [gh-pages](https://github.com/ky4meru/RedWine/tree/gh-pages).
 
 ## Acknowledgements
 
