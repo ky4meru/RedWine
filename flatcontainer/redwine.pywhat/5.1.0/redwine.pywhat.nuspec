@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.pywhat</id>
+    <version>5.1.0</version>
+    <title>pyWhat</title>
+    <authors>@bee-san</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/bee-san/pyWhat</projectUrl>
+    <description>Identify anything</description>
+    <dependencies>
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
