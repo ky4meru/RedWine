@@ -41,7 +41,11 @@ The installation of `redwine.all` might be long, especially because of `redwine.
 
 *RedWine* is designed to work on either physical devices or virtual machines. In both cases, make sure to have a **working backup or a snapshot** before using this project.
 
-At this time, *RedWine* is developed and tested - *then supported* - on [Windows 10 Business 22H2](https://massgrave.dev/windows_10_links). Windows Updates must be fully applied before installing packages with Chocolatey.
+At this time, *RedWine* is developed and tested - *then supported* - on:
+* [Windows 10 Business 22H2](https://massgrave.dev/windows_10_links).
+* [Windows 11 Business 23H2](https://massgrave.dev/windows_11_links).
+
+Windows Updates must be fully applied before installing packages with Chocolatey.
 
 #### Antiviral engines
 
@@ -51,7 +55,7 @@ At this time, *RedWine* is developed and tested - *then supported* - on [Windows
 > You are free to set `$Env:ChocolateyInstall` prior to the Chocolatey installation. This possibility is interesting, especially to install packages at a path that is already excluded by the antiviral engines on the host.
 >
 > ```powershell
-> [Environment]::SetEnvironmentVariable("ChocolateyInstall", "$CustomPath", [System.EnvironmentVariableTarget]::Machine)
+> $Env:ChocolateyInstall = "$CustomPath"
 > ```
 >
 > If you do not manually set it, `$Env:ChocolateyInstall` is set to `$Env:ProgramData\chocolatey` by default during Chocolatey installation process.
@@ -86,7 +90,8 @@ PowerShell modules are downloaded then automatically imported in the PowerShell 
 Python packages are installed with [pipx](https://github.com/pypa/pipx) for the conveniance of self-managed isolated virtual environments. For a complete integration with Chocolatey, and to avoid being bothered by antiviral engines, these environement variables are set on the system.
 
 * `PIPX_HOME` is set to `$Env:ChocolateyInstall\pipx`.
-* `PIPX_BIN` is set to `$Env:ChocolateyInstall\bin`
+* `PIPX_BIN_DIR` is set to `$Env:ChocolateyInstall\bin`
+* `PIPX_MAN_DIR` is set to `$Env:ChocolateyInstall\man`
 * `TMP` and `TEMP` are temporary set to `$Env:ChocolateyInstall\temp` during the installation of a package, then reverted back. This is due to pipx unpacking stuff in `TEMP`.
 
 #### Visual Studio solutions
