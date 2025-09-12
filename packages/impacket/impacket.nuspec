@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.impacket</id>
+    <version>0.13.0</version>
+    <title>Impacket</title>
+    <authors>@fortra</authors>
+    <projectUrl>https://github.com/fortra/impacket</projectUrl>
+    <description>Impacket is a collection of Python classes for working with network protocols</description>
+    <dependencies>
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
