@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ldeep</id>
+    <version>1.0.87</version>
+    <title>ldeep</title>
+    <authors>@franc-pentest</authors>
+    <projectUrl>https://github.com/franc-pentest/ldeep</projectUrl>
+    <description>In-depth ldap enumeration utility</description>
+  </metadata>
+</package>
