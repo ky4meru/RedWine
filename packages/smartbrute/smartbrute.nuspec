@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.smartbrute</id>
+    <version>2024.10.27</version>
+    <title>smartbrute</title>
+    <authors>@ShutdownRepo</authors>
+    <projectUrl>https://github.com/ShutdownRepo/smartbrute</projectUrl>
+    <description>Password spraying and bruteforcing tool for Active Directory Domain Services</description>
+    <dependencies>
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
