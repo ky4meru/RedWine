@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.donpapi</id>
+    <version>1.2.0</version>
+    <title>DonPAPI</title>
+    <authors>@login-securite</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/login-securite/DonPAPI</projectUrl>
+    <description>Dumping DPAPI credz remotely</description>
+    <dependencies>
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
