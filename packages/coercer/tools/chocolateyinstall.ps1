@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url = '[[ProjectUrl]]'
+$url = 'https://github.com/p0dalirius/Coercer'
 
 $tmp = $Env:TMP
 $temp = $Env:TEMP

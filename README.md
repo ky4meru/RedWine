@@ -55,7 +55,7 @@ Windows Updates must be fully applied before installing packages with Chocolatey
 > You are free to set `$Env:ChocolateyInstall` prior to the Chocolatey installation. This possibility is interesting, especially to install packages at a path that is already excluded by the antiviral engines on the host.
 >
 > ```powershell
-> $Env:ChocolateyInstall = "$CustomPath"
+> [System.Environment]::SetEnvironmentVariable("ChocolateyInstall", "$CustomPath", "Machine")
 > ```
 >
 > If you do not manually set it, `$Env:ChocolateyInstall` is set to `$Env:ProgramData\chocolatey` by default during Chocolatey installation process.
