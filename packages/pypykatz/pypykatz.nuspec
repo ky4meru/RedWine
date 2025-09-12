@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.pypykatz</id>
+    <version>0.6.11</version>
+    <title>pypykatz</title>
+    <authors>@skelsec</authors>
+    <projectUrl>https://github.com/skelsec/pypykatz</projectUrl>
+    <description>Mimikatz implementation in pure Python</description>
+    <dependencies>
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
