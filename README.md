@@ -10,11 +10,26 @@
 
 ## TL;DR
 
-1. [Install Chocolatey](https://chocolatey.org/install#individual).
-2. Add *RedWine* as source: `choco source add -n 'RedWine' -s 'https://ky4meru.github.io/RedWine/index.json'`.
-3. List available packages: `choco search -s 'RedWine'`.
-4. Install a specific package: `choco install redwine.$PackageName -y -f`...
-5. ... or install all packages: `choco install redwine.all -y -f`.
+Run a PowerShell session **as administrator** then use the following commands.
+
+```powershell
+# 1. Install Chocolatey (see https://chocolatey.org/install#individual).
+Set-ExecutionPolicy Bypass -Scope Process -Force
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+# 2. Add RedWine as source.
+choco source add --name 'RedWine' --source 'https://ky4meru.github.io/RedWine/index.json'
+
+# 3. List available packages
+choco search --source 'RedWine'
+
+# 4. Install a specific package...
+choco install redwine.$PackageName --yes --force
+
+# 5. ...or install all packages!
+choco install redwine.all --yes --force
+```
 
 The installation of `redwine.all` might be long, especially because of `redwine.dotnet-*` packages. Be patient, grab a glass, and **enjoy *RedWine*... with moderation.**
 
