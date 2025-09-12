@@ -3,7 +3,7 @@
 <p align="center">Public Chocolatey repository to automate offensive Windows configuration</p>
 <hr>
 
-*RedWine* is a static, public and unauthenticated [NuGet](https://www.nuget.org/) feed, powered by [Sleet](https://github.com/emgarten/Sleet), hosting custom offensive [Chocolatey](https://chocolatey.org/) packages.
+*RedWine* is a static, public and unauthenticated [NuGet](https://www.nuget.org/) feed, powered by [Sleet](https://github.com/emgarten/Sleet), hosting custom offensive [Chocolatey](https://chocolatey.org/) packages to automate offensive Windows configuration.
 
 > [!IMPORTANT]
 > If it is your first time here, [RTFM](https://github.com/ky4meru/RedWine#rtfm).
@@ -11,10 +11,10 @@
 ## TL;DR
 
 1. [Install Chocolatey](https://chocolatey.org/install#individual).
-2. Add *RedWine* as source: `choco source add --name='RedWine' --source='https://ky4meru.github.io/RedWine/index.json'`.
-3. List available packages: `choco search --source='RedWine'`.
-4. Install a specific package: `choco install redwine.$PackageName --yes --force`...
-5. ... or install all packages: `choco install redwine.all --yes --force`.
+2. Add *RedWine* as source: `choco source add -n 'RedWine' -s 'https://ky4meru.github.io/RedWine/index.json'`.
+3. List available packages: `choco search -s 'RedWine'`.
+4. Install a specific package: `choco install redwine.$PackageName -y -f`...
+5. ... or install all packages: `choco install redwine.all -y -f`.
 
 The installation of `redwine.all` might be long, especially because of `redwine.dotnet-*` packages. Be patient, grab a glass, and **enjoy *RedWine*... with moderation.**
 

@@ -7,5 +7,8 @@
     <authors>@adrecon</authors>
     <projectUrl>https://github.com/adrecon/ADRecon</projectUrl>
     <description>ADRecon is a tool which gathers information about the Active Directory and generates a report which can provide a holistic picture of the current state of the target AD environment</description>
+    <dependencies>
+      <dependency id="rsat" />
+    </dependencies>
   </metadata>
 </package>
