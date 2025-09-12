@@ -1,6 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pip uninstall pipx -y"
+$python = "$Env:ChocolateyInstall\bin\python3.13.exe"
+
+Start-ChocolateyProcessAsAdmin -ExeToRun "$python" -Statements "-m pip uninstall pipx -y"
 
 Remove-Item -Path $Env:PIPX_HOME -Force -Recurse
 
