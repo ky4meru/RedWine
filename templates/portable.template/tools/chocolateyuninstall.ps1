@@ -1,3 +1,0 @@
-﻿$ErrorActionPreference = 'Stop'
-
-$packageName = '[[PackageName]]'

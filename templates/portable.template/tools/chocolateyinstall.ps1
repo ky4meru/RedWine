@@ -1,8 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = '[[PackageName]]'
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = '[[Url]]'
-$exePath = $(Join-Path $toolsDir "$packageName.exe")
+$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-Get-ChocolateyWebFile -PackageName $packageName -FileFullPath $exePath -Url $url
+$packageArgs = @{
+    packageName = $env:ChocolateyPackageTitle
+    fileFullPath = $(Join-Path $toolsDir "$env:ChocolateyPackageTitle.exe")
+    url = "[[Url]]"
+}
+
+Get-ChocolateyWebFile @packageArgs
