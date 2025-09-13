@@ -8,6 +8,7 @@
     <projectUrl>https://github.com/franc-pentest/ldeep</projectUrl>
     <description>In-depth ldap enumeration utility</description>
     <dependencies>
+      <dependency id="mitkerberos" />
       <dependency id="redwine.pipx" />
     </dependencies>
   </metadata>
