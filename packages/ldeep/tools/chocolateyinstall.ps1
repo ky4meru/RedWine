@@ -1,11 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+$url = 'https://github.com/franc-pentest/ldeep'
 
-$packageArgs = @{
-    packageName = $env:ChocolateyPackageTitle
-    fileFullPath = $(Join-Path $toolsDir "$env:ChocolateyPackageTitle.exe")
-    url = "https://github.com/franc-pentest/ldeep/releases/download/$env:ChocolateyPackageVersion/ldeep_windows-amd64.exe"
-}
+$tmp = $Env:TMP
+$temp = $Env:TEMP
 
-Get-ChocolateyWebFile @packageArgs
+Install-ChocolateyEnvironmentVariable -VariableName "TMP" -VariableValue "$Env:ChocolateyInstall\temp" -VariableType "User"
+Install-ChocolateyEnvironmentVariable -VariableName "TEMP" -VariableValue "$Env:ChocolateyInstall\temp" -VariableType "User"
+
+Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx install git+$url@$env:ChocolateyPackageVersion"
+
+Install-ChocolateyEnvironmentVariable -VariableName "TMP" -VariableValue "$tmp" -VariableType "User"
+Install-ChocolateyEnvironmentVariable -VariableName "TEMP" -VariableValue "$temp" -VariableType "User"
