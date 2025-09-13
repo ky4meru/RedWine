@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.netexec</id>
+    <version>2025.9.10</version>
+    <title>NetExec</title>
+    <authors>@Pennyw0rth</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/Pennyw0rth/NetExec</projectUrl>
+    <description>The Network Execution Tool</description>
+    <dependencies>
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
