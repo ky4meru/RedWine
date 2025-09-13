@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.invoke-obfuscation</id>
+    <version>1.1</version>
+    <title>Invoke-Obfuscation</title>
+    <authors>@danielbohannon</authors>
+    <projectUrl>https://github.com/danielbohannon/Invoke-Obfuscation</projectUrl>
+    <description>PowerShell Obfuscator</description>
+  </metadata>
+</package>
