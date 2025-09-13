@@ -10,6 +10,7 @@
     <description>SOAPHound is a custom-developed .NET data collector tool which can be used to enumerate Active Directory environments via the Active Directory Web Services (ADWS) protocol</description>
     <dependencies>
       <dependency id="redwine.dotnet-48" />
+      <dependency id="nuget.commandline" />
     </dependencies>
   </metadata>
 </package>
