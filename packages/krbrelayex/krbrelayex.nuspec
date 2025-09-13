@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.krbrelayex</id>
+    <version>1.2.0</version>
+    <title>KrbRelayEx</title>
+    <authors>@decoder-it</authors>
+    <projectUrl>https://github.com/decoder-it/KrbRelayEx</projectUrl>
+    <description>Kerberos Relay and Forwarder for (Fake) SMB MiTM Server</description>
+  </metadata>
+</package>
