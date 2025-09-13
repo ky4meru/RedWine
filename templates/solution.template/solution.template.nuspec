@@ -8,7 +8,7 @@
     <projectUrl>[[ProjectUrl]]</projectUrl>
     <description>[[Description]]</description>
     <dependencies>
-      <dependency id="redine.dotnet-[[DotNetVersion]]" />
+      <dependency id="redwine.dotnet-[[DotNetVersion]]" />
     </dependencies>
   </metadata>
 </package>

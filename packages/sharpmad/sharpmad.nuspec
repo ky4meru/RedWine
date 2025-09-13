@@ -8,7 +8,7 @@
     <projectUrl>https://github.com/Kevin-Robertson/Sharpmad</projectUrl>
     <description>C# version of Powermad</description>
     <dependencies>
-      <dependency id="redine.dotnet-35" />
+      <dependency id="redwine.dotnet-35" />
     </dependencies>
   </metadata>
 </package>
