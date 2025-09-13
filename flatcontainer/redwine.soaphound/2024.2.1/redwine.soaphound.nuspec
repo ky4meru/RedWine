@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.soaphound</id>
+    <version>2024.2.1</version>
+    <title>SOAPHound</title>
+    <authors>@FalconForceTeam</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/FalconForceTeam/SOAPHound</projectUrl>
+    <description>SOAPHound is a custom-developed .NET data collector tool which can be used to enumerate Active Directory environments via the Active Directory Web Services (ADWS) protocol</description>
+    <dependencies>
+      <dependency id="redwine.dotnet-48" />
+    </dependencies>
+  </metadata>
+</package>
