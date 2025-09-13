@@ -6,7 +6,7 @@
     <title>noPac</title>
     <authors>@cube0x0</authors>
     <projectUrl>https://github.com/cube0x0/noPac</projectUrl>
-    <description>[[Description]]</description>
+    <description>CVE-2021-42287/CVE-2021-42278 Scanner and Exploiter</description>
     <dependencies>
       <dependency id="redwine.dotnet-461" />
     </dependencies>
