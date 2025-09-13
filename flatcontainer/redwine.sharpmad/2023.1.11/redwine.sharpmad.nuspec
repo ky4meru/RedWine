@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.sharpmad</id>
+    <version>2023.1.11</version>
+    <title>SharpMad</title>
+    <authors>@Kevin-Robertson</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/Kevin-Robertson/Sharpmad</projectUrl>
+    <description>C# version of Powermad</description>
+    <dependencies>
+      <dependency id="redine.dotnet-35" />
+    </dependencies>
+  </metadata>
+</package>
