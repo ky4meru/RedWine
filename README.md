@@ -1,6 +1,6 @@
 <p align="center"><img src="images/redwine.png" width="256" height="" alt="RedWine"></p>
 <h1 align="center">RedWine</h1>
-<p align="center">Public Chocolatey repository to automate offensive Windows configuration</p>
+<p align="center">Offensive Chocolatey packages for Windows</p>
 <hr>
 
 *RedWine* is a static, public and unauthenticated [NuGet](https://www.nuget.org/) feed, powered by [Sleet](https://github.com/emgarten/Sleet), hosting custom offensive [Chocolatey](https://chocolatey.org/) packages to automate offensive Windows configuration.
