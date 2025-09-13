@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.vctools</id>
+    <version>1.0.0</version>
+    <title>vctools</title>
+    <authors>@Microsoft</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://visualstudio.microsoft.com/</projectUrl>
+    <description>Build modern C++ apps for Windows using tools of your choice, including MSVC, Clang, CMake, or MSBuild</description>
+    <dependencies>
+      <dependency id="visualstudio2019community" />
+    </dependencies>
+  </metadata>
+</package>
