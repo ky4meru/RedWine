@@ -9,6 +9,7 @@
     <description>Dumping DPAPI credz remotely</description>
     <dependencies>
       <dependency id="redwine.pipx" />
+      <dependency id="redwine.vctools" />
     </dependencies>
   </metadata>
 </package>
