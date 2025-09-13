@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.o365spray</id>
+    <version>3.0.4</version>
+    <title>o365spray</title>
+    <authors>@0xZDH</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/0xZDH/o365spray</projectUrl>
+    <description>Username enumeration and password spraying tool aimed at Microsoft O365</description>
+    <dependencies>
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
