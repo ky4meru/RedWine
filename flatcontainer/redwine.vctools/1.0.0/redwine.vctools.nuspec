@@ -9,7 +9,7 @@
     <projectUrl>https://visualstudio.microsoft.com/</projectUrl>
     <description>Build modern C++ apps for Windows using tools of your choice, including MSVC, Clang, CMake, or MSBuild</description>
     <dependencies>
-      <dependency id="visualstudio2019community" />
+      <dependency id="visualstudio2022community" />
     </dependencies>
   </metadata>
 </package>
