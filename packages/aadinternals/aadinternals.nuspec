@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.aadinternals</id>
+    <version>0.9.8</version>
+    <title>AADInternals</title>
+    <authors>@Gerenios</authors>
+    <projectUrl>https://github.com/Gerenios/AADInternals</projectUrl>
+    <description>AADInternals PowerShell module for administering Azure AD and Office 365</description>
+  </metadata>
+</package>
