@@ -7,5 +7,8 @@
     <authors>@x90skysn3k</authors>
     <projectUrl>https://github.com/x90skysn3k/brutespray</projectUrl>
     <description>Bruteforcing from various scanner output - Automatically attempts default creds on found services</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>
