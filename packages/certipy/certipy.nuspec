@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.certipy</id>
+    <version>5.0.3</version>
+    <title>Certipy</title>
+    <authors>@ly4k</authors>
+    <projectUrl>https://github.com/ly4k/Certipy</projectUrl>
+    <description>Tool for Active Directory Certificate Services enumeration and abuse</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
+  </metadata>
+</package>
