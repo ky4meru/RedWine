@@ -163,6 +163,40 @@ function Uninstall-RedWinePowerShellScriptPackage {
     Remove-Item $ScriptPath -Force
 }
 
+function Install-RedWineSolutionPackage {
+    [CmdletBinding()]
+    param(
+        [ValidateNotNullOrEmpty()]
+        [String] $Name,
+
+        [ValidateNotNullOrEmpty()]
+        [String] $Url,
+
+        [ValidateNotNullOrEmpty()]
+        [String] $Tag,
+        
+        [ValidateNotNullOrEmpty()]
+        [String] $Path,
+
+        [ValidateNotNullOrEmpty()]
+        [String] $Version
+    )
+
+    $packageArgs = @{
+        Name = $Name
+        Url = $Url
+        Path = $Path
+    }
+
+    Install-RedWineArchivePackage @packageArgs
+
+    $MsBuild = "C:\Program Files (x86)\Microsoft Visual Studio\$Version\Community\MSBuild\Current\Bin\MSBuild.exe"
+    $SolutionPath = $(Join-Path $(Join-Path $Path "$Name-$Tag") "$Name.sln")
+
+    Start-ChocolateyProcessAsAdmin -ExeToRun "nuget" -Statements "restore $SolutionPath" -ErrorAction "SilentlyContinue"
+    Start-ChocolateyProcessAsAdmin -ExeToRun $MsBuild -Statements "$SolutionPath -p:Configuration=Release"
+}
+
 Export-ModuleMember -Function "Install-RedWinePortablePackage"
 Export-ModuleMember -Function "Install-RedWinePythonPackage"
 Export-ModuleMember -Function "Uninstall-RedWinePythonPackage"
@@ -171,3 +205,4 @@ Export-ModuleMember -Function "Install-RedWinePowerShellModulePackage"
 Export-ModuleMember -Function "Uninstall-RedWinePowerShellModulePackage"
 Export-ModuleMember -Function "Install-RedWinePowerShellScriptPackage"
 Export-ModuleMember -Function "Uninstall-RedWinePowerShellScriptPackage"
+Export-ModuleMember -Function "Install-RedWineSolutionPackage"
