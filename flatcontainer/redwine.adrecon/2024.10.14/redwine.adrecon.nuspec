@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.adrecon</id>
+    <version>2024.10.14</version>
+    <title>ADRecon</title>
+    <authors>@adrecon</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/adrecon/ADRecon</projectUrl>
+    <description>ADRecon is a tool which gathers information about the Active Directory and generates a report which can provide a holistic picture of the current state of the target AD environment</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+      <dependency id="rsat" />
+    </dependencies>
+  </metadata>
+</package>
