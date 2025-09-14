@@ -75,6 +75,11 @@ function Install-RedWineArchivePackage {
     }
 
     Install-ChocolateyZipPackage @packageArgs
+
+    $TarFile = Get-ChildItem -File -Path $Path -Filter *.tar
+    if ($TarFile) {
+        Get-ChocolateyUnzip -FileFullPath $TarFile.FullName -Destination $Path
+    }
 }
 
 Export-ModuleMember -Function "Install-RedWinePortablePackage"
