@@ -55,6 +55,29 @@ function Uninstall-RedWinePythonPackage {
     Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx uninstall $Name -y"
 }
 
+function Install-RedWineArchivePackage {
+    [CmdletBinding()]
+    param(
+        [ValidateNotNullOrEmpty()]
+        [String] $Name,
+
+        [ValidateNotNullOrEmpty()]
+        [String] $Url,
+        
+        [ValidateNotNullOrEmpty()]
+        [String] $Path
+    )
+
+    $packageArgs = @{
+        packageName = $Name
+        unzipLocation = $Path
+        url = $Url
+    }
+
+    Install-ChocolateyZipPackage @packageArgs
+}
+
 Export-ModuleMember -Function "Install-RedWinePortablePackage"
 Export-ModuleMember -Function "Install-RedWinePythonPackage"
 Export-ModuleMember -Function "Uninstall-RedWinePythonPackage"
+Export-ModuleMember -Function "Install-RedWineArchivePackage"
