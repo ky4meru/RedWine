@@ -1,9 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = "RustScan"
-$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://github.com/bee-san/RustScan/releases/download/2.4.1/x86_64-windows-rustscan.exe.zip'
+$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
-Get-ChocolateyWebFile -PackageName $packageName -FileFullPath "$toolsDir\$packageName.zip" -Url $url
-Get-ChocolateyUnzip -FileFullPath "$toolsDir\$packageName.zip" -Destination $toolsDir
-Install-BinFile -Name $packageName -Path "$toolsDir\$packageName.exe"
+$packageArgs = @{
+    packageName = $env:ChocolateyPackageTitle
+    unzipLication = $toolsDir
+    url = "https://github.com/bee-san/RustScan/releases/download/$env:ChocolateyPackageVersion/x86_64-windows-rustscan.exe.zip"
+}
+
+Install-ChocolateyZipPackage @packageArgs
