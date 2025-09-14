@@ -9,6 +9,7 @@
     <description>Abuse Azure API permissions for red teaming</description>
     <dependencies>
       <dependency id="redwine.extension" />
+      <dependency id="redwine.aadinternals" />
     </dependencies>
   </metadata>
 </package>
