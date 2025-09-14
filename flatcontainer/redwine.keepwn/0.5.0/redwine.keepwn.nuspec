@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.keepwn</id>
+    <version>0.5.0</version>
+    <title>KeePwn</title>
+    <authors>@Orange-Cyberdefense</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/Orange-Cyberdefense/KeePwn</projectUrl>
+    <description>A python tool to automate KeePass discovery and secret extraction</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
