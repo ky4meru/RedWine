@@ -2,7 +2,7 @@
 
 $packagesArgs = @{
     url = "https://github.com/Orange-Cyberdefense/KeePwn"
-    tag = "$env:ChocolateyPackageversion"
+    tag = "0.5"
 }
 
 Install-RedWinePythonPackage @packagesArgs
