@@ -66,6 +66,12 @@ To exclude the Chocolatey folder from Windows Defender scans, run the following 
 Add-MpPreference -ExclusionPath "$Env:ChocolateyInstall"
 ```
 
+Finally, run the following PowerShell command **as adminsitrator** to make Chocolatey uses a custom cache location that is excluded from the antiviral scans. It also ensure a better cleaning during uninstallation processes.
+
+```powershell
+choco config set --name="cacheLocation" --value="$env:ChocolateyInstall\temp"
+```
+
 ### Packages
 
 *Redwine* provides different types of packages: portable executables, PowerShell modules, Python packages and Visual Studio solutions. [Packages templates](./templates/) are provided for contribution.
