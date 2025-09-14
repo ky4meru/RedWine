@@ -1,5 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = "AbuseAzureAPIPermissions"
+$packageArgs = @{
+    name = "$env:ChocolateyPackageTitle"
+}
 
-Get-Content -Path $PROFILE | Select-String -Pattern $packageName -NotMatch | Out-File -Path $PROFILE
+Uninstall-RedWinePowerShellPackage @packageArgs

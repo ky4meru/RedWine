@@ -82,7 +82,50 @@ function Install-RedWineArchivePackage {
     }
 }
 
+function Install-RedWinePowerShellPackage {
+    [CmdletBinding()]
+    param(
+        [ValidateNotNullOrEmpty()]
+        [String] $Name,
+
+        [ValidateNotNullOrEmpty()]
+        [String] $Url,
+
+        [ValidateNotNullOrEmpty()]
+        [String] $Tag,
+        
+        [ValidateNotNullOrEmpty()]
+        [String] $Path,
+        
+        [ValidateNotNullOrEmpty()]
+        [String] $Module
+    )
+
+    $packageArgs = @{
+        Name = $Name
+        Url = $Url
+        Path = $Path
+    }
+
+    Install-RedWineArchivePackage @packageArgs
+
+    $ModulePath = $(Join-Path $(Join-Path $Path "$Name-$Tag") "$Module")
+    Add-Content -Path $PROFILE -Value "Import-Module $ModulePath"
+}
+
+function Uninstall-RedWinePowerShellPackage {
+    [CmdletBinding()]
+    param(
+        [ValidateNotNullOrEmpty()]
+        [String] $Name
+    )
+
+    Get-Content -Path $PROFILE | Select-String -Pattern $Name -NotMatch | Out-File -Path $PROFILE
+}
+
 Export-ModuleMember -Function "Install-RedWinePortablePackage"
 Export-ModuleMember -Function "Install-RedWinePythonPackage"
 Export-ModuleMember -Function "Uninstall-RedWinePythonPackage"
 Export-ModuleMember -Function "Install-RedWineArchivePackage"
+Export-ModuleMember -Function "Install-RedWinePowerShellPackage"
+Export-ModuleMember -Function "Uninstall-RedWinePowerShellPackage"

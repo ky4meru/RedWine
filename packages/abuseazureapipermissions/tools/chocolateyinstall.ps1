@@ -1,12 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'AbuseAzureAPIPermissions'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://github.com/Hagrid29/AbuseAzureAPIPermissions/archive/refs/heads/main.zip'
-$zipPath = $(Join-Path $toolsDir "$packageName.zip")
-$ps1Path = $(Join-Path $toolsDir "$packageName-main\$packageName.ps1")
 
-Get-ChocolateyWebFile -PackageName $packageName -FileFullPath $zipPath -Url $url
-Get-ChocolateyUnzip -FileFullPath $zipPath -Destination $toolsDir
+$packageArgs = @{
+    name = "$env:ChocolateyPackageTitle"
+    url = "https://github.com/Hagrid29/AbuseAzureAPIPermissions/archive/f817a1910e980c26f6adef2002d02c5b1a08acfc.zip"
+    tag = "f817a1910e980c26f6adef2002d02c5b1a08acfc"
+    path = "$toolsDir"
+    module = "$env:ChocolateyPackageTitle.ps1"
+}
 
-Add-Content -Path $PROFILE -Value "Import-Module $ps1Path"
+Install-RedWinePowerShellPackage @packageArgs
