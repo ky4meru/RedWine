@@ -4,4 +4,4 @@ $packageArgs = @{
     name = "$env:ChocolateyPackageTitle"
 }
 
-Uninstall-RedWinePowerShellPackage @packageArgs
+Uninstall-RedWinePowerShellModulePackage @packageArgs

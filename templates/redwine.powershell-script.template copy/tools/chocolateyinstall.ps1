@@ -4,8 +4,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
     name = "$env:ChocolateyPackageTitle"
-    url = "https://github.com/adrecon/ADRecon/archive/d2ba12c71aef40e07cfe6be6fd98e94f2406b85c.zip"
-    tag = "d2ba12c71aef40e07cfe6be6fd98e94f2406b85c"
+    url = "[[Url]]"
+    tag = "[[Tag]]"
     path = "$toolsDir"
     script = "$env:ChocolateyPackageTitle.ps1"
 }

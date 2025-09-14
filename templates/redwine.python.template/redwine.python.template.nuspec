@@ -8,6 +8,7 @@
     <projectUrl>[[ProjectUrl]]</projectUrl>
     <description>[[Description]]</description>
     <dependencies>
+      <dependency id="redwine.extension" />
       <dependency id="redwine.pipx" />
     </dependencies>
   </metadata>

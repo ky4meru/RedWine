@@ -10,4 +10,7 @@ $solutionPath = $(Join-Path $toolsDir "$packageName-$tag\$packageName.sln")
 Get-ChocolateyWebFile -PackageName $packageName -FileFullPath "$toolsDir\$packageName.zip" -Url $url
 Get-ChocolateyUnzip -FileFullPath "$toolsDir\$packageName.zip" -Destination $toolsDir
 
+# Optional: only if needed (i.e. packages.config).
+# Remove nuget.commandline as dependency if not required.
+# Start-ChocolateyProcessAsAdmin -ExeToRun "nuget" -Statements "restore $solutionPath"
 Start-ChocolateyProcessAsAdmin -ExeToRun $msBuild -Statements "$solutionPath -p:Configuration=Release"

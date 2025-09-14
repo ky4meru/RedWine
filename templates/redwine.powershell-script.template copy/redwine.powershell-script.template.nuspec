@@ -9,8 +9,6 @@
     <description>[[Description]]</description>
     <dependencies>
       <dependency id="redwine.extension" />
-      <dependency id="redwine.dotnet-[[DotNetVersion]]" />
-      <dependency id="nuget.commandline" />
     </dependencies>
   </metadata>
 </package>

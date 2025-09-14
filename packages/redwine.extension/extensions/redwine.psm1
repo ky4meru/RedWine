@@ -82,7 +82,7 @@ function Install-RedWineArchivePackage {
     }
 }
 
-function Install-RedWinePowerShellPackage {
+function Install-RedWinePowerShellModulePackage {
     [CmdletBinding()]
     param(
         [ValidateNotNullOrEmpty()]
@@ -113,7 +113,7 @@ function Install-RedWinePowerShellPackage {
     Add-Content -Path $PROFILE -Value "Import-Module $ModulePath"
 }
 
-function Uninstall-RedWinePowerShellPackage {
+function Uninstall-RedWinePowerShellModulePackage {
     [CmdletBinding()]
     param(
         [ValidateNotNullOrEmpty()]
@@ -123,9 +123,51 @@ function Uninstall-RedWinePowerShellPackage {
     Get-Content -Path $PROFILE | Select-String -Pattern $Name -NotMatch | Out-File -Path $PROFILE
 }
 
+function Install-RedWinePowerShellScriptPackage {
+    [CmdletBinding()]
+    param(
+        [ValidateNotNullOrEmpty()]
+        [String] $Name,
+
+        [ValidateNotNullOrEmpty()]
+        [String] $Url,
+
+        [ValidateNotNullOrEmpty()]
+        [String] $Tag,
+        
+        [ValidateNotNullOrEmpty()]
+        [String] $Path
+    )
+
+    $packageArgs = @{
+        Name = $Name
+        Url = $Url
+        Path = $Path
+    }
+
+    Install-RedWineArchivePackage @packageArgs
+
+    $ScriptPath = $(Join-Path $(Join-Path $Path "$Name-$Tag") "$Name.ps1")
+    $BinPath = $(Join-Path $env:ChocolateyInstall "bin")
+    Copy-Item $ScriptPath $BinPath -Force
+}
+
+function Uninstall-RedWinePowerShellScriptPackage {
+    [CmdletBinding()]
+    param(
+        [ValidateNotNullOrEmpty()]
+        [String] $Name
+    )
+
+    $ScriptPath = $(Join-Path $(Join-Path $env:ChocolateyInstall "bin") "$Name.ps1")
+    Remove-Item $ScriptPath -Force
+}
+
 Export-ModuleMember -Function "Install-RedWinePortablePackage"
 Export-ModuleMember -Function "Install-RedWinePythonPackage"
 Export-ModuleMember -Function "Uninstall-RedWinePythonPackage"
 Export-ModuleMember -Function "Install-RedWineArchivePackage"
-Export-ModuleMember -Function "Install-RedWinePowerShellPackage"
-Export-ModuleMember -Function "Uninstall-RedWinePowerShellPackage"
+Export-ModuleMember -Function "Install-RedWinePowerShellModulePackage"
+Export-ModuleMember -Function "Uninstall-RedWinePowerShellModulePackage"
+Export-ModuleMember -Function "Install-RedWinePowerShellScriptPackage"
+Export-ModuleMember -Function "Uninstall-RedWinePowerShellScriptPackage"

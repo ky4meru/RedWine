@@ -74,11 +74,17 @@ choco config set --name="cacheLocation" --value="$env:ChocolateyInstall\temp"
 
 ### Packages
 
-*Redwine* provides different types of packages: portable executables, PowerShell modules, Python packages and Visual Studio solutions. [Packages templates](./templates/) are provided for contribution.
+*Redwine* provides different types of packages: portable executables, PowerShell modules, Python packages and Visual Studio solutions. *Redwine* provides a [Chocolatey extension](./packages/redwine.extension/extensions/redwine.psm1) to handle the different install processes, and [Chocolatey templates](./templates/) for **welcome** contributions.
+
+To install the templates locally, use the following command.
+
+```powershell
+Copy-Item -Force -Recurse "$PathToRedWine\templates" $env:ChocolateyInstall
+```
 
 #### Portable executable
 
-Portable executables are installed in `$Env:ChocolateyInstall\bin`, which is part of the `PATH`.
+Portable executables are [shimmed](https://docs.chocolatey.org/en-us/features/shim/) in `$Env:ChocolateyInstall\bin`, which is part of the `PATH`.
 
 #### PowerShell modules
 
@@ -102,7 +108,7 @@ Python packages are installed with [pipx](https://github.com/pypa/pipx) for the 
 
 #### Visual Studio solutions
 
-Solutions are downloaded and built on the system directly. Then, compiled executables are shimed in `$Env:ChocolateyInstall\bin`, which is part of the `PATH`.
+Solutions are downloaded and built on the system directly. Then, compiled executables are shimmed in `$Env:ChocolateyInstall\bin`, which is part of the `PATH`.
 
 ### Static NuGet feed
 
