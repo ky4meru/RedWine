@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.extension</id>
+    <version>1.0.0</version>
+    <title>RedWine PowerShell Module</title>
+    <authors>@ky4meru</authors>
+    <projectUrl>https://github.com/ky4meru/RedWineo</projectUrl>
+    <description>RedWine PowerShell Module to extend Chocolatey</description>
+  </metadata>
+</package>
