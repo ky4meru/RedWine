@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>redwine.manspider</id>
+    <version>2025.01.31</version>
+    <title>Manspider</title>
+    <authors>@blacklanternsecurity</authors>
+    <projectUrl>https://github.com/blacklanternsecurity/MANSPIDER</projectUrl>
+    <description>Spider entire networks for juicy files sitting on SMB shares</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+      <dependency id="redwine.pipx" />
+    </dependencies>
+  </metadata>
+</package>
