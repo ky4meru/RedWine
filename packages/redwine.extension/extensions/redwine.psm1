@@ -2,19 +2,19 @@ function Install-RedWinePortablePackage {
     [CmdletBinding()]
     param(
         [ValidateNotNullOrEmpty()]
-        [String] $PackageName,
+        [String] $Name,
 
         [ValidateNotNullOrEmpty()]
         [String] $Url,
 
         [ValidateNotNullOrEmpty()]
-        [String] $ToolsDir
+        [String] $Path
     )
 
     $PackageArgs = @{
-        PackageName = $PackageName
-        FileFullPath = $(Join-Path $ToolsDir "$PackageName.exe")
+        PackageName = $Name
         Url = $Url
+        FileFullPath = $Path
     }
 
     Get-ChocolateyWebFile @PackageArgs
