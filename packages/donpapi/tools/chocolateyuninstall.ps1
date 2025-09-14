@@ -1,3 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx uninstall donpapi -y"
+$packagesArgs = @{
+    name = $env:ChocolateyPackageName
+}
+
+Uninstall-RedWinePythonPackage @packagesArgs

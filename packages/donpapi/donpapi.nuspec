@@ -8,6 +8,7 @@
     <projectUrl>https://github.com/login-securite/DonPAPI</projectUrl>
     <description>Dumping DPAPI credz remotely</description>
     <dependencies>
+      <dependency id="redwine.extension" />
       <dependency id="redwine.pipx" />
       <dependency id="visualstudio2019-workload-vctools" />
     </dependencies>
