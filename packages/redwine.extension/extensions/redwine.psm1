@@ -5,10 +5,11 @@ function Install-RedWinePortablePackage {
         [String] $PackageName,
 
         [ValidateNotNullOrEmpty()]
-        [String] $Url
-    )
+        [String] $Url,
 
-    $ToolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+        [ValidateNotNullOrEmpty()]
+        [String] $ToolsDir
+    )
 
     $PackageArgs = @{
         PackageName = $PackageName
