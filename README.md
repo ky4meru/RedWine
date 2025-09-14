@@ -13,21 +13,16 @@
 Run a PowerShell session **as administrator** then use the following commands.
 
 ```powershell
-# 1. Install Chocolatey (see https://chocolatey.org/install#individual).
-Set-ExecutionPolicy Bypass -Scope Process -Force
-[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-# 2. Add RedWine as source.
+# Add RedWine as source.
 choco source add --name 'RedWine' --source 'https://ky4meru.github.io/RedWine/index.json'
 
-# 3. List available packages
+# List available packages
 choco search --source 'RedWine'
 
-# 4. Install a specific package...
+# Install a specific package...
 choco install redwine.$PackageName --yes --force
 
-# 5. ...or install all packages!
+# ...or install all packages!
 choco install redwine.all --yes --force
 ```
 
@@ -47,7 +42,7 @@ At this time, *RedWine* is developed and tested - *then supported* - on:
 
 Windows Updates must be fully applied before installing packages with Chocolatey.
 
-#### Antiviral engines
+#### Deal with antiviral engines
 
 *RedWine* manipulates files that are considered as threats by all antiviral engines. It will - *for sure* - be annoying during the installation of most packages. To avoid this, make sure that `$Env:ChocolateyInstall` - *which will contain all the RedWine packages* - is part of the exclusion lists of the antiviral engines prior to any package installation.
 
@@ -55,10 +50,15 @@ Windows Updates must be fully applied before installing packages with Chocolatey
 > You are free to set `$Env:ChocolateyInstall` prior to the Chocolatey installation. This possibility is interesting, especially to install packages at a path that is already excluded by the antiviral engines on the host.
 >
 > ```powershell
+> # Run this only if you want to install Chocolatey at a custom location.
+> # If no custom value is set, the default installation path is $Env:ProgramData\chocolatey.
 > [System.Environment]::SetEnvironmentVariable("ChocolateyInstall", "$CustomPath", "Machine")
+> 
+> # Install Chocolatey (see https://chocolatey.org/install#individual).
+> Set-ExecutionPolicy Bypass -Scope Process -Force
+> [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
+> Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 > ```
->
-> If you do not manually set it, `$Env:ChocolateyInstall` is set to `$Env:ProgramData\chocolatey` by default during Chocolatey installation process.
 
 To exclude the Chocolatey folder from Windows Defender scans, run the following PowerShell command **as adminsitrator**. For other antiviral engines, please refer to the associated documentation.
 
