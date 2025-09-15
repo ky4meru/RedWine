@@ -33,6 +33,18 @@ jobs:
           ref: gh-pages
           path: site
 
+      - name: Reset feed
+        run: |
+          Remove-Item -Force -Recurse ./site/autocomplete -ErrorAction SilentlyContinue
+          Remove-Item -Force -Recurse ./site/flatcontainer -ErrorAction SilentlyContinue
+          Remove-Item -Force -Recurse ./site/registration -ErrorAction SilentlyContinue
+          Remove-Item -Force -Recurse ./site/search -ErrorAction SilentlyContinue
+          Remove-Item -Force ./site/index.json -ErrorAction SilentlyContinue
+          Remove-Item -Force ./site/sleet.packageindex.json -ErrorAction SilentlyContinue
+          Remove-Item -Force ./site/sleet.settings.json -ErrorAction SilentlyContinue
+          $sleet = (Resolve-Path .\tools\SleetExe\tools\Sleet.exe).Path
+          & $sleet init --config ./site/sleet.json --source RedWine
+
       - name: Push packages to feed
         run: |
           $packages = Get-ChildItem *.nupkg -Recurse -ErrorAction SilentlyContinue
