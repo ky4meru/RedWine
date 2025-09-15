@@ -1,9 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'SpoolFool'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://github.com/ly4k/SpoolFool/raw/refs/heads/main/SpoolFool.exe'
-$exePath = $(Join-Path $toolsDir "$packageName.exe")
 
-Get-ChocolateyWebFile -PackageName $packageName -FileFullPath $exePath -Url $url
-Install-BinFile -Name $packageName -Path $exePath
+$packageArgs = @{
+    name = "$env:ChocolateyPackageTitle"
+    url = "https://github.com/ly4k/SpoolFool/raw/7c9fa09547693d8cd7b53c78ad7025e516968333/SpoolFool.exe"
+    path = $(Join-Path $toolsDir "$env:ChocolateyPackageTitle.exe")
+}
+
+Install-RedWinePortablePackage @packageArgs

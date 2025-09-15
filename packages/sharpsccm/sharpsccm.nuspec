@@ -7,5 +7,8 @@
     <authors>@Mayyhem</authors>
     <projectUrl>https://github.com/Mayyhem/SharpSCCM</projectUrl>
     <description>A C# utility for interacting with SCCM</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

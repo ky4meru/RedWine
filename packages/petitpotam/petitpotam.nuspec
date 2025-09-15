@@ -2,10 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>redwine.petitpotam</id>
-    <version>1.0</version>
+    <version>2024.08.14</version>
     <title>PetitPotam</title>
     <authors>@topotam</authors>
     <projectUrl>https://github.com/topotam/PetitPotam</projectUrl>
     <description>PoC tool to coerce Windows hosts to authenticate to other machines via MS-EFSRPC EfsRpcOpenFileRaw or other functions</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

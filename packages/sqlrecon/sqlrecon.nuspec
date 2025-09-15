@@ -7,5 +7,8 @@
     <authors>@skahwah</authors>
     <projectUrl>https://github.com/skahwah/SQLRecon</projectUrl>
     <description>A C# MS SQL toolkit designed for offensive reconnaissance and post-exploitation</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

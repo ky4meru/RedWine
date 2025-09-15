@@ -7,5 +7,8 @@
     <authors>@odedshimon</authors>
     <projectUrl>https://github.com/odedshimon/BruteShark</projectUrl>
     <description>Network Analysis Tool</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

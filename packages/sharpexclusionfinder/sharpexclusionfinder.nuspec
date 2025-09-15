@@ -7,5 +7,8 @@
     <authors>@Friends-Security</authors>
     <projectUrl>https://github.com/Friends-Security/SharpExclusionFinder</projectUrl>
     <description>Tool designed to find folder exclusions using Windows Defender using command line utility MpCmdRun.exe as a low privileged user, without relying on event logs</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

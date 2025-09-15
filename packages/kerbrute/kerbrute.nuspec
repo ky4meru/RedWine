@@ -7,5 +7,8 @@
     <authors>@ropnop</authors>
     <projectUrl>https://github.com/ropnop/kerbrute</projectUrl>
     <description>A tool to perform Kerberos pre-auth bruteforcing</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

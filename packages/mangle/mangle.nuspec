@@ -7,5 +7,8 @@
     <authors>@optiv</authors>
     <projectUrl>https://github.com/optiv/Mangle</projectUrl>
     <description>Mangle is a tool that manipulates aspects of compiled executables (.exe or DLL) to avoid detection from EDRs</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

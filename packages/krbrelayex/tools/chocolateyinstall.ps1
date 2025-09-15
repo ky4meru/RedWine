@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
-    packageName = $env:ChocolateyPackageTitle
-    fileFullPath = $(Join-Path $toolsDir "$env:ChocolateyPackageTitle.exe")
+    name = "$env:ChocolateyPackageTitle"
     url = "https://github.com/decoder-it/KrbRelayEx/releases/download/v$env:ChocolateyPackageVersion/KrbRelayEx.exe"
+    path = $(Join-Path $toolsDir "$env:ChocolateyPackageTitle.exe")
 }
 
-Get-ChocolateyWebFile @packageArgs
+Install-RedWinePortablePackage @packageArgs

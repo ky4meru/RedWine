@@ -7,5 +7,8 @@
     <authors>@SnaffCon</authors>
     <projectUrl>https://github.com/SnaffCon/Snaffler</projectUrl>
     <description>A tool for pentesters to help find delicious candy</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>
