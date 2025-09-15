@@ -9,6 +9,7 @@
     <projectUrl>https://github.com/yaap7/ldapsearch-ad</projectUrl>
     <description>Python3 script to quickly get various information from a domain controller through his LDAP service</description>
     <dependencies>
+      <dependency id="redwine.extension" />
       <dependency id="redwine.pipx" />
     </dependencies>
   </metadata>

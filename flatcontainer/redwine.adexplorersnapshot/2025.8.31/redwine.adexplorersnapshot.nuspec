@@ -2,13 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>redwine.adexplorersnapshot</id>
-    <version>1.0.0</version>
+    <version>2025.8.31</version>
     <title>adexplorersnapshot</title>
     <authors>@c3c</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/c3c/ADExplorerSnapshot.py</projectUrl>
     <description>ADExplorerSnapshot.py is an AD Explorer snapshot parser</description>
     <dependencies>
+      <dependency id="redwine.extension" />
       <dependency id="redwine.pipx" />
     </dependencies>
   </metadata>

@@ -9,6 +9,7 @@
     <projectUrl>https://github.com/0xZDH/o365spray</projectUrl>
     <description>Username enumeration and password spraying tool aimed at Microsoft O365</description>
     <dependencies>
+      <dependency id="redwine.extension" />
       <dependency id="redwine.pipx" />
     </dependencies>
   </metadata>

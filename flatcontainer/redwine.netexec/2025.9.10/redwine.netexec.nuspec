@@ -9,6 +9,7 @@
     <projectUrl>https://github.com/Pennyw0rth/NetExec</projectUrl>
     <description>The Network Execution Tool</description>
     <dependencies>
+      <dependency id="redwine.extension" />
       <dependency id="redwine.pipx" />
       <dependency id="visualstudio2019-workload-vctools" />
     </dependencies>
