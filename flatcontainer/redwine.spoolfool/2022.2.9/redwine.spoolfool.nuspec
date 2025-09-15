@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>redwine.spoolfool</id>
+    <version>2022.2.9</version>
+    <title>SpoolFool</title>
+    <authors>@lyak</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/ly4k/SpoolFool</projectUrl>
+    <description>Exploit for CVE-2022-21999 - Windows Print Spooler Elevation of Privilege Vulnerability (LPE)</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
+  </metadata>
+</package>
