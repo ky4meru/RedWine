@@ -8,6 +8,7 @@
     <projectUrl>https://github.com/decoder-it/KrbRelayEx</projectUrl>
     <description>Kerberos Relay and Forwarder for (Fake) SMB MiTM Server</description>
     <dependencies>
+      <dependency id="dotnet" version="8.0.0" />
       <dependency id="redwine.extension" />
     </dependencies>
   </metadata>
