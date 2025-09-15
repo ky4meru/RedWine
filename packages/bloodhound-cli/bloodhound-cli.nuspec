@@ -7,5 +7,9 @@
     <authors>@SpecterOps</authors>
     <projectUrl>https://github.com/SpecterOps/bloodhound-cli</projectUrl>
     <description>Six Degrees of Domain Admin</description>
+    <dependencies>
+      <dependency id="docker-desktop" />
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

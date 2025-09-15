@@ -7,5 +7,8 @@
     <authors>@diversenok</authors>
     <projectUrl>https://github.com/diversenok/TokenUniverse</projectUrl>
     <description>An advanced tool for working with access tokens and Windows security policy</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

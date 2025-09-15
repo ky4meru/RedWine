@@ -7,5 +7,8 @@
     <authors>@antonioCoco</authors>
     <projectUrl>https://github.com/antonioCoco/RoguePotato</projectUrl>
     <description>Another Windows Local Privilege Escalation from Service Account to System</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

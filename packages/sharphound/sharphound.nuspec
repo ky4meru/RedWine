@@ -7,5 +7,8 @@
     <authors>@SpecterOps</authors>
     <projectUrl>https://github.com/SpecterOps/SharpHound</projectUrl>
     <description>C# Data Collector for BloodHound</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>

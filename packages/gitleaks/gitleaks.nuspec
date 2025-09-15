@@ -7,5 +7,8 @@
     <authors>@gitleaks</authors>
     <projectUrl>https://github.com/gitleaks/gitleaks</projectUrl>
     <description>Find secrets with Gitleaks</description>
+    <dependencies>
+      <dependency id="redwine.extension" />
+    </dependencies>
   </metadata>
 </package>
