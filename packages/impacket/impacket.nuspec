@@ -8,6 +8,7 @@
     <projectUrl>https://github.com/fortra/impacket</projectUrl>
     <description>Impacket is a collection of Python classes for working with network protocols</description>
     <dependencies>
+      <dependency id="redwine.extension" />
       <dependency id="redwine.pipx" />
     </dependencies>
   </metadata>

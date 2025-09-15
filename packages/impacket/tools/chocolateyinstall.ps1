@@ -1,14 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$url = 'https://github.com/fortra/impacket'
+$packagesArgs = @{
+    url = "https://github.com/fortra/impacket"
+    tag = "b742bd4da426f2f523d5c7d6a65cfb94589c0eb5"
+}
 
-$tmp = $Env:TMP
-$temp = $Env:TEMP
-
-Install-ChocolateyEnvironmentVariable -VariableName "TMP" -VariableValue "$Env:ChocolateyInstall\temp" -VariableType "User"
-Install-ChocolateyEnvironmentVariable -VariableName "TEMP" -VariableValue "$Env:ChocolateyInstall\temp" -VariableType "User"
-
-Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx install git+$url"
-
-Install-ChocolateyEnvironmentVariable -VariableName "TMP" -VariableValue "$tmp" -VariableType "User"
-Install-ChocolateyEnvironmentVariable -VariableName "TEMP" -VariableValue "$temp" -VariableType "User"
+Install-RedWinePythonPackage @packagesArgs

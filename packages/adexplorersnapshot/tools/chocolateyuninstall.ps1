@@ -1,3 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx uninstall adexplorersanpshot -y"
+$packagesArgs = @{
+    name = "$env:ChocolateyPackageTitle"
+}
+
+Uninstall-RedWinePythonPackage @packagesArgs

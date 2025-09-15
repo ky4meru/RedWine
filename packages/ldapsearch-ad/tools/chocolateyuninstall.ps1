@@ -1,3 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx uninstall ldapsearchad -y"
+$packagesArgs = @{
+    name = "ldapsearch-ad"
+}
+
+Uninstall-RedWinePythonPackage @packagesArgs

@@ -9,6 +9,7 @@
     <description>In-depth ldap enumeration utility</description>
     <dependencies>
       <dependency id="mitkerberos" />
+      <dependency id="redwine.extension" />
       <dependency id="redwine.pipx" />
     </dependencies>
   </metadata>

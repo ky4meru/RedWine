@@ -1,3 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx uninstall coercer -y"
+$packagesArgs = @{
+    name = "coercer"
+}
+
+Uninstall-RedWinePythonPackage @packagesArgs

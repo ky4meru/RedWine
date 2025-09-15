@@ -1,3 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx uninstall o365spray -y"
+$packagesArgs = @{
+    name = "o365spray"
+}
+
+Uninstall-RedWinePythonPackage @packagesArgs

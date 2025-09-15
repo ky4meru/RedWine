@@ -1,3 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Start-ChocolateyProcessAsAdmin -ExeToRun "python" -Statements "-m pipx uninstall ldeep -y"
+$packagesArgs = @{
+    name = "ldeep"
+}
+
+Uninstall-RedWinePythonPackage @packagesArgs

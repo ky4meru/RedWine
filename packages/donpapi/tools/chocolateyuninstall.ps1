@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packagesArgs = @{
-    name = $env:ChocolateyPackageName
+    name = "donpapi"
 }
 
 Uninstall-RedWinePythonPackage @packagesArgs
